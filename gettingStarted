@@ -15,6 +15,8 @@ Create repo in github and copy url
 Initialize repo in VS Code (Click on branch thing on left, then might have the intialize pop-up, 
     click on branch thing across the top)
 
+Select commit all from vscode git menu and enter a commit name
+
 ctrl ~ for terminal enter these commands
 
 git remote add origin $url goes here$ (looks like git@github.com:tmurvv/take2techsitesass.git)
