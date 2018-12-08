@@ -4,15 +4,15 @@
         to right bottom,
         rgba($color-primary-light, 0.8),
         rgba($color-primary-dark, 0.8)),
-    url(../img/tiffany_mountain.jpg);
+    url(../img/TiffLakeMntWideSquare.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: center right;
     position: relative;
     
 
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
         height: 95vh;
     }
 
@@ -26,15 +26,19 @@
         url(../img/hero.jpg);
     }
 
+    @include respond(portrait) {
+        background-position: bottom right;
+    }
     @include respond(phone) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
     }
 
     &__logo-box {
         position: absolute;
-        top: 4rem;
-        left: 4rem;
+        top: 0rem;
+        left: 0rem;
+        padding: .5rem 1rem;
     }
 
     &__logo {
@@ -43,9 +47,16 @@
     
     &__text-box {
         position: absolute;
-        top: 40%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+
+        &--heading-secondary {
+            font-family: "savoye", 'tangerine', sans-serif;
+            font-weight: 400;
+            font-size: 65px;
+            color: white;
+        }
     }
 }

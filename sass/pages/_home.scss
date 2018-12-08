@@ -1,7 +1,7 @@
 .section-about {
     background-color: $color-grey-light-1;
     padding: 25rem 0;
-    margin-top: -20vh;
+    margin-top: -28vh;
 
     @include respond(tab-port) {
         padding: 20rem 0;
@@ -14,13 +14,13 @@
         to right bottom,
         rgba($color-primary-light, 0.8),
         rgba($color-primary-dark, 0.8)),
-    url(../img/nat-4.jpg);
+        url(../img/nat-4.jpg);
     background-size: cover;
-    transform: skewY(-7deg);
+    transform: skewY(7deg);
     margin-top: -10rem;
 
     & > * {
-        transform: skewY(7deg);
+        transform: skewY(-7deg);
     }
 
     @include respond(tab-port) {
@@ -29,7 +29,7 @@
 
 }
 
-.section-tours {
+.section-weddings {
     background-color: $color-grey-light-1;
     padding: 25rem 0 15rem 0;
     margin-top: -10rem;
@@ -62,9 +62,11 @@
                                     rgba($color-white, .9) 0%,
                                     rgba($color-white, .9) 50%,
                                     transparent 50%) ,
-                            url(../img/nat-10.jpg);
+                            url(../img/TiffLakeMtnWideSquareSm.jpg);
     background-size: 100%;
     border-radius: 3px;
+    background-position: center right;
+
     box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
 
     @include respond(tab-land) {
