@@ -1,3 +1,63 @@
+<?php
+    include 'config.php';
+    
+    if (isset($_POST['submit'])) {
+        echo 'imin';
+        $result = '';
+        $recaptchaArray = ['secret' => $recaptchaSecretKey,
+        'response' => $_POST['g-recaptcha-response']
+        ];
+
+        // $curl = curl_init();
+        // curl_setopt($curl, CURLOPT_URL, 'https://www.google.com/recaptcha/api/siteverify');
+        // curl_setopt($curl, CURLOPT_POST, true);
+        // curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($recaptchaArray));
+        // curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        // $response = json_decode(curl_exec($curl));
+        // curl_close($curl);
+      
+        // if (isset($response->success) && !$response->success == true) {
+        //     $result = 'ReCaptcha validation failed.';
+        // }
+
+        if (isset($result) && !$result == 'ReCaptcha validation failed.') {
+            $inputName = $_POST['name'];
+            $inputEmail = $_POST['email'];
+            // $inputPhone = $_POST['phone'];
+            // $inputMessage = $_POST['message'];
+
+            //below 2 lines need to be put back at what is currently line 38 after Email: '.$inputEmail.'<br>
+            // Phone: '.$inputPhone.'<br>
+            // Message: '.$inputMessage.'<br>
+    
+            $mail_body = '<html>
+            <body style="font-family: Arial, Helvetica, sans-serif;
+                                line-height:1.8em;">
+            <p>Hello '.$siteEmailRecipient.', <br> A message with the following information was sent via the contact form on the J.Dolan Stories website:</p>
+            <p>Name: '.$inputName.'<br>
+            Email: '.$inputEmail.'<br>           
+            <br>
+            Have a nice day!<br>
+            albertharpist.com
+            </p>
+            </body>
+            </html>';
+        
+            $subject = "Message from albertaharpist.com contact form";
+            $headers = "From: alertaharpist.com" . "\r\n";
+            $headers .= "MIME-Version: 1.0" . "\r\n";
+            $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+            
+            //Error Handling for PHPMailer
+            if(!mail($email, $subject, $mail_body, $headers)){
+                $result = "Email failed to send.";
+            }
+            else{
+                $result = "Email sent!";
+            }
+        }       
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -34,8 +94,8 @@
                         <ul class="header__topLine--navigation-list">
                             <li class="header__topLine--navigation-item"><a href="#about" class="header__topLine--navigation-link">About Tiffany</a></li>
                             <li class="header__topLine--navigation-item"><a href="#section-weddings" class="header__topLine--navigation-link">Weddings</a></li>
-                            <li class="header__topLine--navigation-item"><a href="#testimonials" class="header__topLine--navigation-link">Testimonials</a></li>
-                            <li class="header__topLine--navigation-item"><a href="#contact" class="header__topLine--navigation-link">Contact</a></li>
+                            <li class="header__topLine--navigation-item"><a href="#section-testimonials" class="header__topLine--navigation-link">Testimonials</a></li>
+                            <li class="header__topLine--navigation-item"><a href="#section-book" class="header__topLine--navigation-link">Contact</a></li>
                         </ul>
                     </nav>
                     
@@ -52,10 +112,10 @@
         </header>
 
         <main>
-            <section class="section-about">
+            <section class="section-subLanding">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
-                        The Harp
+                        Weddings, Special Occasions. ..
                     </h2>
                 </div>
 
@@ -71,9 +131,9 @@
                             From Bach to Beyonce, any piece sounds beautiful on the harp! Please feel free to <a href="contact">contact Tiffany</a> for more information, to schedule a free consultation, or to book an event. 
                         </p>
                         <div class="u-center-text u-margin-top-huge">
-                            <a href="#" class="btn btn--green">More About Weddings</a>
+                            <a href="#section-weddings" class="btn btn--green">More About Weddings</a>
                         </div>
-                        <!-- <a href="#" class="btn-text">Learn more &rarr;</a> -->
+                        <!-- <a href="#section-weddings" class="btn-text">Learn more &rarr;</a> -->
                     </div>
                     <div class="col-1-of-2">
                         <div class="composition">
@@ -102,7 +162,7 @@
                             <i class="feature-box__icon icon-basic-world"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Weddings</h3>
                             <p class="feature-box__text">
-                                Wedding packages include music for the bridal entrance and the couple's triumphant walk back down the aisle. <a href="#section-weddings">Learn More</a></p>
+                                Wedding packages include music for the bridal entrance and the couple's triumphant walk back down the aisle. <a href="#section-weddings">Learn More...</a></p>
                         </div>
                     </div>
 
@@ -111,7 +171,7 @@
                             <i class="feature-box__icon icon-basic-compass"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Receptions</h3>
                             <p class="feature-box__text">
-                                The harp can provides magical ambience for your reception. Do you have a song in mind? Let Tiffany know! <a href="#contact">Contact Tiffany</a>
+                                The harp can provides magical ambience for your reception. Do you have a song in mind? Let Tiffany know! <a href="#section-book">Contact Tiffany</a>
                             </p>
                         </div>
                     </div>
@@ -121,17 +181,17 @@
                             <i class="feature-box__icon icon-basic-map"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Special Occasions</h3>
                              <p class="feature-box__text">
-                                Anniversaries, Christmas Parties, Birthday Celebrations are all part of the fun! The harp will make any event a memorable one.
+                                Anniversaries, Christmas Parties, Birthday Celebrations... the harp will make any event a memorable one!<a href="contact">Contact Tiffany</a>
                             </p>
                         </div>
-                    </div>
+                    </div>  
 
                     <div class="col-1-of-4">
                         <div class="feature-box">
                             <i class="feature-box__icon icon-basic-heart"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Harp Lessons</h3>
                             <p class="feature-box__text">
-                                Have you always wanted to learn the harp? Tiffany would love to show you how! <a href="contact">Click here,</a> to contact Tiffany to learn more.
+                                Have you always wanted to learn the harp? Tiffany would love to teach you how to sound beautiful on the harp. <a href="contact">Contact Tiffany</a>
                             </p>
                         </div>
                     </div>
@@ -150,49 +210,53 @@
                        <img src="img/tiffany_wedding.jpg">
                    </div>
                    <div class="weddingsContainer__text">
-                       <h3 class="heading-tertiary u-margin-bottom-small">Make your wedding extrodinary</h3>
-                       <p>Here we can add the steps to a wedding. Contact, consultation, contract, etc or we need a bunch of text about what the harp adds to a wedding. Something like, from the first sounds of the entrance of the bride to the final moments of an exquisite ceremony, the harp can create the atmosphere that you are dreaming of.  Tiffany has added an incredible specialness to many weddings in the Calgary area.<br><br> Tiffany offers a free consultation and will customize all of the music to your musical tastes. If you are not sure, she can choose elegant, appropriate music for you. <a href="#contact">Contact Tiffany</a></p>
+                       <h3 class="heading-tertiary u-margin-bottom-small">Make your wedding extraordinary</h3>
+                       <p>Here we can add the steps to a wedding. Contact, consultation, contract, etc or we need a bunch of text about what the harp adds to a wedding. Something like, from the first sounds of the entrance of the bride to the final moments of an exquisite ceremony, the harp can create the atmosphere that you are dreaming of.  Tiffany has added an incredible specialness to many weddings in the Calgary area.<br><br> Tiffany offers a free consultation and will customize all of the music to your musical tastes. If you are not sure, she can choose elegant, appropriate music for you. <a href="#section-book">Contact Tiffany</a></p>
                    </div>
                </div>
                
                 <div class="u-center-text u-margin-top-huge">
-                    <a href="#" class="btn btn--green">Contact Tiffany</a>
+                    <a href="#section-book" class="btn btn--green">Contact Tiffany</a>
                 </div>
             </section>
 
-            <!-- <section class="section-stories">
+            <section class="section-about">
+                
                 <div class="bg-video">
+                     
+                
+                <!-- <div class="bg-video">
                     <video class="bg-video__content" autoplay muted loop>
                         <source src="img/video.mp4" type="video/mp4">
                         <source src="img/video.webm" type="video/webm">
                         Your browser is not supported!
                     </video>
-                </div>
+                </div> -->
 
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">
-                        Testimonials
-                    </h2>
-                </div>
+                
 
                 <div class="row">
                     <div class="story">
-                        <figure class="story__shape">
+                        <!-- <figure class="story__shape">
                             <img src="img/nat-8.jpg" alt="Person on a tour" class="story__img">
                             <figcaption class="story__caption">Mary Smith</figcaption>
-                        </figure>
+                        </figure> -->
                         <div class="story__text">
-                            <h3 class="heading-tertiary u-margin-bottom-small">Tiffany was the best!</h3>
+                            <div class="u-center-text u-margin-bottom-small">
+                                <h2 class="heading-secondary">
+                                    About Tiffany
+                                </h2>
+                            </div> 
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
-                                ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
-                                repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+                                Tiffany Hansen has played the harp for 29 years. Her musical pursuits have taken her to many places throughout Canada and the United States. She has been the Principal Harpist of the Calgary Civic Symphony for the past 14 years. One of her greatest enjoyments in playing such an elegant instrument is being able to provide a unique and memorable musical experience for weddings and special events. <br><br>
+
+                                <span>&quot;</span>Tiffany is an amazing musician who knows how to bring out the beauty in any melody. I would highly recommend her for any occasion.<span>&quot;</span>&nbsp;&nbsp;&nbsp;--Tisha Murvihill
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
+                <!-- <div class="row">
                     <div class="story">
                         <figure class="story__shape">
                             <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img">
@@ -207,23 +271,24 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="u-center-text u-margin-top-huge">
-                    <a href="#" class="btn-text">Read all stories &rarr;</a>
-                </div>
-            </section> -->
-
-            <section class="section-book">
+                <!-- <div class="u-center-text">  
+                    <a href="#section-features" class="btn-text">Contact Tiffany &rarr;</a>
+                </div> -->
+                
+            </section>
+        </div>  
+            <section class="section-book" id='section-book'>
                 <div class="row">
                     <div class="book">
                         <div class="book__form">
-                            <form action="#" class="form">
+                            <form action="index.php" class="form" name="submit">
                                 <div class="u-margin-bottom-medium">
                                     <h2 class="heading-secondary">
                                         Contact Tiffany
                                     </h2>
-                                </div>
+                                </div>  
 
                                 <div class="form__text">
                                     <p>Email Tiffany at <a href="mailto: info@albertaharpist.com">info@albertaharpist.com</a> <span>   or...</span></p>
@@ -256,9 +321,10 @@
                                         </label>
                                     </div>
                                 </div> -->
-
+                                <!-- <div class="g-recaptcha" data-sitekey="6LcrP3sUAAAAACZXFfHU362MVFkMvhuTo83bRnNr"></div>
+                         -->
                                 <div class="form__group">
-                                    <button class="btn btn--green">Send &rarr;</button>
+                                    <button class="btn btn--green" type='submit' name='submit'>Send &rarr;</button>
                                 </div>
                             </form>
                         </div>
@@ -281,23 +347,22 @@
                 <div class="col-1-of-2">
                     <div class="footer__navigation">
                         <ul class="footer__list">
-                            <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                            <li class="footer__item"><a href="#section-about" class="footer__link">About Tiffany</a></li>
+                            <li class="footer__item"><a href="#section-weddings" class="footer__link">Weddings</a></li>
+                            <li class="footer__item"><a href="#section-testimonials" class="footer__link">Testimonials</a></li>
+                            <li class="footer__item"><a href="#section-book" class="footer__link">Contact</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-1-of-2">
                     <p class="footer__copyright">
-                        Website built by take2tech.ca. Design by courtesy of Jonas Schmedtmann.
-                    </p>
+                        Website built by <a href="https://take2tech.ca">take2tech.ca</a>. &nbsp;Design ideas courtesy of Jonas Schmedtmann. Used with permission.
+                    </p> 
                 </div>
             </div>
         </footer>
 
-        <div class="popup" id="popup">
+        <!-- <div class="popup" id="popup">
             <div class="popup__content">
                 <div class="popup__left">
                     <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
@@ -318,9 +383,9 @@
                         vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed
                         euismod nisi porta.
                     </p>
-                    <a href="#" class="btn btn--green">Book now</a>
+                    <a href="#section-book" class="btn btn--green">Book now</a>
                 </div>
             </div>
-        </div>
+        </div> -->
     </body>
 </html>

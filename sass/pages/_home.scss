@@ -1,4 +1,4 @@
-.section-about {
+.section-subLanding {
     background-color: $color-grey-light-1;
     padding: 25rem 0;
     margin-top: -28vh;
@@ -31,7 +31,7 @@
 
 .section-weddings {
     background-color: $color-grey-light-1;
-    padding: 25rem 0 15rem 0;
+    padding: 25rem 0 9rem 0;
     margin-top: -10rem;
 
     @include respond(tab-port) {
@@ -39,22 +39,22 @@
     }
 }
 
-.section-stories {
+.section-about {
     position: relative;
-    padding: 15rem 0;
+    //padding: 15rem 0;
 
     @include respond(tab-port) {
         padding: 10rem 0;
     }
-}
+}    
 
 .section-book {
     padding: 15rem 0;
-    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    background-image: linear-gradient(to top, $color-primary-light, $color-primary);    
 
     @include respond(tab-port) {
         padding: 10rem 0;
-    }
+    }    
 }
 
 .book {
@@ -62,7 +62,7 @@
                                     rgba($color-white, .9) 0%,
                                     rgba($color-white, .9) 50%,
                                     transparent 50%) ,
-                            url(../img/TiffLakeMtnWideSquareSm.jpg);
+                            url(../img/tiffany_mountainCropRight.jpg);  
     background-size: 100%;
     border-radius: 3px;
     background-position: center right;
