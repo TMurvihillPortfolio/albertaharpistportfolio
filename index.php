@@ -2,11 +2,17 @@
     include 'config.php';
     
     if (isset($_POST['submit'])) {
-        echo 'imin';
         $result = '';
-        $recaptchaArray = ['secret' => $recaptchaSecretKey,
-        'response' => $_POST['g-recaptcha-response']
-        ];
+        $inputEmail = '';
+        $inputName = '';
+        $inputMessage = '';
+        $inputPhone = '';
+
+        if(isset($_POST['g-recaptcha-response'])  && isset($recaptchaSecretKey)) {
+            $recaptchaArray = ['secret' => $recaptchaSecretKey,
+            'response' => $_POST['g-recaptcha-response']
+            ];
+        }
 
         // $curl = curl_init();
         // curl_setopt($curl, CURLOPT_URL, 'https://www.google.com/recaptcha/api/siteverify');
@@ -21,30 +27,39 @@
         // }
 
         if (isset($result) && !$result == 'ReCaptcha validation failed.') {
-            $inputName = $_POST['name'];
-            $inputEmail = $_POST['email'];
+            if(isset($_POST['name'])) {
+                $inputName = $_POST['name'];
+            }
+            if(isset($_POST['email'])) {
+                $inputEmail = $_POST['email'];
+            }
+            if(isset($_POST['phone'])) {
+                $inputPhone = $_POST['phone'];
+            }
+            if(isset($_POST['message'])) {
+                $inputMessage = $_POST['message'];
+            }
+            
             // $inputPhone = $_POST['phone'];
             // $inputMessage = $_POST['message'];
-
-            //below 2 lines need to be put back at what is currently line 38 after Email: '.$inputEmail.'<br>
-            // Phone: '.$inputPhone.'<br>
-            // Message: '.$inputMessage.'<br>
     
             $mail_body = '<html>
             <body style="font-family: Arial, Helvetica, sans-serif;
                                 line-height:1.8em;">
-            <p>Hello '.$siteEmailRecipient.', <br> A message with the following information was sent via the contact form on the J.Dolan Stories website:</p>
+            <p>Hello '.$siteEmailRecipient.', <br><br> A message with the following information was sent via the contact form on the albertaharpist.com website:</p>
             <p>Name: '.$inputName.'<br>
-            Email: '.$inputEmail.'<br>           
+            Email: '.$inputEmail.'<br>
+            Phone: '.$inputPhone.'<br>
+            Message: '.$inputMessage.'<br>         
             <br>
             Have a nice day!<br>
-            albertharpist.com
+            <a href="https://albertaharpist.com">albertharpist.com</a>
             </p>
             </body>
             </html>';
         
             $subject = "Message from albertaharpist.com contact form";
-            $headers = "From: alertaharpist.com" . "\r\n";
+            $headers = "From: albertaharpist.com" . "\r\n";
             $headers .= "MIME-Version: 1.0" . "\r\n";
             $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
             
@@ -54,6 +69,7 @@
             }
             else{
                 $result = "Email sent!";
+                unset($POST);
             }
         }       
     }
@@ -211,7 +227,7 @@
                    </div>
                    <div class="weddingsContainer__text">
                        <h3 class="heading-tertiary u-margin-bottom-small">Make your wedding extraordinary</h3>
-                       <p>Here we can add the steps to a wedding. Contact, consultation, contract, etc or we need a bunch of text about what the harp adds to a wedding. Something like, from the first sounds of the entrance of the bride to the final moments of an exquisite ceremony, the harp can create the atmosphere that you are dreaming of.  Tiffany has added an incredible specialness to many weddings in the Calgary area.<br><br> Tiffany offers a free consultation and will customize all of the music to your musical tastes. If you are not sure, she can choose elegant, appropriate music for you. <a href="#section-book">Contact Tiffany</a></p>
+                       <p>Here we need a bunch of text about what the harp adds to a wedding. Something like, from the first sounds of the entrance of the bride to the final moments of an exquisite ceremony, the harp can create the atmosphere that you are dreaming of (ugh, this is certainly not the text content you are dreaming of).  Tiffany has added an incredible specialness (ok, this is really, really bad copy) to many weddings in the Calgary area.<br><br> Tiffany offers a free consultation and will customize all of the music to your musical tastes. If you are not sure, she can choose elegant, appropriate music for you. <a href="#section-book">Contact Tiffany</a></p>
                    </div>
                </div>
                
@@ -250,7 +266,7 @@
                             <p>
                                 Tiffany Hansen has played the harp for 29 years. Her musical pursuits have taken her to many places throughout Canada and the United States. She has been the Principal Harpist of the Calgary Civic Symphony for the past 14 years. One of her greatest enjoyments in playing such an elegant instrument is being able to provide a unique and memorable musical experience for weddings and special events. <br><br>
 
-                                <span>&quot;</span>Tiffany is an amazing musician who knows how to bring out the beauty in any melody. I would highly recommend her for any occasion.<span>&quot;</span>&nbsp;&nbsp;&nbsp;--Tisha Murvihill
+                                <span>&quot;</span>Tiffany is an amazing musician with a natural talent for creating beauty. I would highly recommend her for any occasion.<span>&quot;</span>&nbsp;&nbsp;&nbsp;--Tisha Murvihill
                             </p>
                         </div>
                     </div>
@@ -278,15 +294,20 @@
                 </div> -->
                 
             </section>
-        </div>  
+        </div> 
+        <div class="u-center-text u-margin-top-huge">
+                    <a href="#section-book" class="btn btn--green">Contact Tiffany</a>
+                </div>
             <section class="section-book" id='section-book'>
+                
                 <div class="row">
                     <div class="book">
                         <div class="book__form">
-                            <form action="index.php" class="form" name="submit">
+                            <form action="index.php#section-book" class="form" name="submit" method='post'>
                                 <div class="u-margin-bottom-medium">
                                     <h2 class="heading-secondary">
-                                        Contact Tiffany
+                                        <?php if(isset($result)&&(!$result=='')) {echo $result.'<br>'; unset($result);} else {echo 'Contact Tiffany';} ?> 
+                                       
                                     </h2>
                                 </div>  
 
@@ -295,13 +316,22 @@
                                 </div>
 
                                 <div class="form__group">
-                                    <input type="text" class="form__input" placeholder="Name" id="name" required>
                                     <label for="name" class="form__label">Full name</label>
+                                    <input type="text" name="name" class="form__input" id="name" required>                           
                                 </div>
 
                                 <div class="form__group">
-                                    <input type="email" class="form__input" placeholder="Email address" id="email" required>
                                     <label for="email" class="form__label">Email address</label>
+                                    <input type="email" name="email" class="form__input" id="email" required>
+                                    
+                                </div>
+                                <div class="form__group">
+                                    <label for="phone" class="form__label">Optional Phone</label>
+                                    <input type="phone" name="phone" class="form__input" id="phone">
+                                </div>
+                                <div class="form__group">
+                                    <label for="message" class="form__label">Optional Message</label>
+                                    <textarea rows='4' name="message" class="form__input" id="message"></textarea>
                                 </div>
 
                                 <!-- <div class="form__group u-margin-bottom-medium">

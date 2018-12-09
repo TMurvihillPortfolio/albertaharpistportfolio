@@ -69,9 +69,15 @@ body {
     body {
       padding: 0; } }
 
-::selection {
-  background-color: #B3A17F;
-  color: #fff; }
+@font-face {
+  font-family: savoye;
+  src: url("fonts/savoye.ttf"); }
+
+a {
+  color: #B3A17F;
+  padding: .3rem;
+  text-decoration: none;
+  border-bottom: 1px solid #B3A17F; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -138,11 +144,6 @@ body {
 
 .paragraph {
   font-size: 1.6rem; }
-  .paragraph > a {
-    color: #B3A17F;
-    padding: .3rem;
-    text-decoration: none;
-    border-bottom: 1px solid #B3A17F; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
@@ -171,18 +172,10 @@ body {
   margin-top: 10rem !important; }
 
 .bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  opacity: .15;
-  overflow: hidden; }
-  .bg-video__content {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; }
+  background-image: linear-gradient(to right bottom, rgba(255, 246, 229, 0.8), rgba(110, 90, 53, 0.8)), url(../img/HarpHands.jpg);
+  background-position: center;
+  padding: 5rem;
+  height: 70rem; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -450,8 +443,22 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
+.form__text {
+  margin-bottom: 2rem;
+  margin-top: -2.5rem; }
+  .form__text > p {
+    font-size: 18px; }
+    .form__text > p > span {
+      font-size: 24px;
+      font-style: italic;
+      color: #0da17f;
+      margin-left: .8rem; }
+
 .form__group:not(:last-child) {
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem; }
+
+.form__group button {
+  margin-top: 2rem; }
 
 .form__input {
   font-size: 1.5rem;
@@ -608,11 +615,11 @@ body {
 
 .story {
   width: 75%;
-  margin: 0 auto;
+  margin: 5% auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
-  padding: 6rem;
+  padding: 2rem;
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
@@ -642,34 +649,31 @@ body {
     @media only screen and (max-width: 37.5em) {
       .story__shape {
         transform: translateX(-3rem) skewX(0); } }
-  .story__img {
-    height: 100%;
-    transform: translateX(-4rem) scale(1.4);
-    backface-visibility: hidden;
-    transition: all .5s; }
   .story__text {
+    margin: 5rem;
     transform: skewX(12deg); }
+    .story__textp > span {
+      font-style: italic;
+      font-size: 72px; }
     @media only screen and (max-width: 37.5em) {
       .story__text {
         transform: skewX(0); } }
-  .story__caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 20%);
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1.7rem;
-    text-align: center;
-    opacity: 0;
-    transition: all .5s;
-    backface-visibility: hidden; }
-  .story:hover .story__caption {
-    opacity: 1;
-    transform: translate(-50%, -50%); }
-  .story:hover .story__img {
-    transform: translateX(-4rem) scale(1);
-    filter: blur(3px) brightness(80%); }
+
+.weddingsContainer {
+  display: flex;
+  justify-content: space-between; }
+  .weddingsContainer__image {
+    width: 47.5%;
+    height: 40%; }
+    .weddingsContainer__image > img {
+      width: 100%; }
+  .weddingsContainer__text {
+    padding: 25px;
+    width: 47.5%;
+    background-color: #dbd5c9;
+    font-size: 18px; }
+    .weddingsContainer__text > h3 {
+      font-size: 20px; }
 
 .footer {
   background-color: #333;
@@ -688,6 +692,8 @@ body {
   .footer__logo {
     width: 15rem;
     height: auto; }
+    .footer__logo > img {
+      width: 20%; }
   .footer__navigation {
     border-top: 1px solid #777;
     padding-top: 2rem;
@@ -765,7 +771,7 @@ body {
 
 .header {
   height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(255, 246, 229, 0.8), rgba(110, 90, 53, 0.8)), url(../img/TiffLakeMntWideSquare.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 246, 229, 0), rgba(110, 90, 53, 0.7)), url(../img/TiffLakeMntWideSquare.jpg);
   background-size: cover;
   background-position: center right;
   position: relative; }
@@ -795,7 +801,8 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
     .header__text-box--heading-secondary {
-      font-family: "tangerine", sans-serif;
+      font-family: "savoye", 'tangerine', sans-serif;
+      font-weight: 400;
       font-size: 65px;
       color: white; }
 
@@ -806,8 +813,8 @@ body {
     height: 3.5rem; }
     .header__topLine--logo-box {
       position: absolute;
-      top: 4rem;
-      left: 4rem; }
+      top: 1rem;
+      left: 2rem; }
   .header__topLine--navigation-list {
     display: flex;
     position: absolute;
@@ -821,13 +828,12 @@ body {
     display: inline-block;
     font-size: 1.8rem;
     font-weight: 300;
-    padding-bottom: 2rem;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
     background-size: 220%;
-    border: 1px transparent white;
+    border-bottom: 1px solid transparent;
     transition: all .4s; }
     .header__topLine--navigation-link:link span, .header__topLine--navigation-link:visited span {
       margin-right: 1.5rem;
@@ -869,12 +875,12 @@ body {
     top: 0;
     transform: rotate(-135deg); }
 
-.section-about {
+.section-subLanding {
   background-color: #f7f7f7;
   padding: 25rem 0;
-  margin-top: -20vh; }
+  margin-top: -28vh; }
   @media only screen and (max-width: 56.25em) {
-    .section-about {
+    .section-subLanding {
       padding: 20rem 0; } }
 
 .section-features {
@@ -889,32 +895,34 @@ body {
     .section-features {
       padding: 10rem 0; } }
 
-.section-tours {
+.section-weddings {
   background-color: #f7f7f7;
-  padding: 25rem 0 15rem 0;
+  padding: 25rem 0 9rem 0;
   margin-top: -10rem; }
   @media only screen and (max-width: 56.25em) {
-    .section-tours {
+    .section-weddings {
       padding: 20rem 0 10rem 0; } }
 
-.section-stories {
+.section-about {
   position: relative;
-  padding: 15rem 0; }
+  margin-bottom: 8rem; }
   @media only screen and (max-width: 56.25em) {
-    .section-stories {
+    .section-about {
       padding: 10rem 0; } }
 
 .section-book {
-  padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #fff6e5, #6e5a35); }
+  margin-top: 8rem;
+  padding: 5% 8%;
+  background-image: linear-gradient(to bottom right, #6e5a35, #fff6e5); }
   @media only screen and (max-width: 56.25em) {
     .section-book {
       padding: 10rem 0; } }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/tiffany_mountainCropRight.jpg);
   background-size: 100%;
   border-radius: 3px;
+  background-position: center right;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
   @media only screen and (max-width: 75em) {
     .book {
