@@ -376,7 +376,7 @@ body {
   .composition__photo {
     width: 35%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-    border-radius: 2px;
+    border-radius: 24px;
     position: absolute;
     z-index: 10;
     transition: all .2s;
@@ -388,24 +388,26 @@ body {
         width: 33.33333333%;
         box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
     .composition__photo--p1 {
-      left: 3rem;
-      top: -1.5rem; }
+      left: 8rem;
+      top: -2.5rem;
+      height: 29rem; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--p1 {
           top: 0;
           transform: scale(1.2); } }
     .composition__photo--p2 {
-      right: 16rem;
+      left: 25rem;
       top: 2rem;
-      height: 28rem; }
+      height: 29rem; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--p2 {
           top: -1rem;
           transform: scale(1.3);
           z-index: 100; } }
     .composition__photo--p3 {
-      left: 20%;
-      top: 12rem; }
+      left: 13rem;
+      top: 15rem;
+      height: 29rem; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--p3 {
           top: 1rem;
@@ -771,9 +773,9 @@ body {
 
 .header {
   height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(255, 246, 229, 0), rgba(110, 90, 53, 0.7)), url(../img/TiffLakeMntWideSquare.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 246, 229, 0), rgba(110, 90, 53, 0.7)), url(../img/HarpHands.jpg);
   background-size: cover;
-  background-position: center right;
+  background-position: bottom;
   position: relative; }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .header {
@@ -810,11 +812,11 @@ body {
   display: flex;
   justify-content: space-between; }
   .header__topLine--logo {
-    height: 3.5rem; }
+    height: 5.5rem; }
     .header__topLine--logo-box {
       position: absolute;
-      top: 1rem;
-      left: 2rem; }
+      top: 2rem;
+      left: 3rem; }
   .header__topLine--navigation-list {
     display: flex;
     position: absolute;
@@ -831,49 +833,11 @@ body {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
     background-size: 220%;
     border-bottom: 1px solid transparent;
     transition: all .4s; }
-    .header__topLine--navigation-link:link span, .header__topLine--navigation-link:visited span {
-      margin-right: 1.5rem;
-      display: inline-block; }
   .header__topLine--navigation-link:hover, .header__topLine--navigation-link:active {
     border-bottom: 1px solid white; }
-  .header__topLine__checkbox:checked ~ .header__topLine__background {
-    transform: scale(80); }
-  .header__topLine__checkbox:checked ~ .header__topLine__nav {
-    opacity: 1;
-    width: 100%; }
-  .header__topLine__icon {
-    position: relative;
-    margin-top: 3.5rem; }
-    .header__topLine__icon, .header__topLine__icon::before, .header__topLine__icon::after {
-      width: 3rem;
-      height: 2px;
-      background-color: #333;
-      display: inline-block; }
-    .header__topLine__icon::before, .header__topLine__icon::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      transition: all .2s; }
-    .header__topLine__icon::before {
-      top: -.8rem; }
-    .header__topLine__icon::after {
-      top: .8rem; }
-  .header__topLine__button:hover .header__topLine__icon::before {
-    top: -1rem; }
-  .header__topLine__button:hover .header__topLine__icon::after {
-    top: 1rem; }
-  .header__topLine__checkbox:checked + .header__topLine__button .header__topLine__icon {
-    background-color: transparent; }
-  .header__topLine__checkbox:checked + .header__topLine__button .header__topLine__icon::before {
-    top: 0;
-    transform: rotate(135deg); }
-  .header__topLine__checkbox:checked + .header__topLine__button .header__topLine__icon::after {
-    top: 0;
-    transform: rotate(-135deg); }
 
 .section-subLanding {
   background-color: #f7f7f7;

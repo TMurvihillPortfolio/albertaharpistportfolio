@@ -4,7 +4,7 @@
     &__photo {
         width: 35%;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
-        border-radius: 2px;
+        border-radius: 24px;
         position: absolute;
         z-index: 10;
         transition: all .2s;
@@ -18,19 +18,19 @@
         }
 
         &--p1 {
-            left: 3rem;
-            top: -1.5rem;
+            left: 8rem;
+            top: -2.5rem;
+            height: 29rem;
 
             @include respond(tab-port)  {
                 top: 0;
                 transform: scale(1.2);
             }
         }
-
         &--p2 {
-            right: 16rem;
+            left: 25rem;
             top: 2rem;
-            height: 28rem;
+            height: 29rem;
 
             @include respond(tab-port)  {
                 top: -1rem;
@@ -40,8 +40,9 @@
         }
 
         &--p3 {
-            left: 20%;
-            top: 12rem;
+            left: 13rem;
+            top: 15rem;
+            height: 29rem;
 
             @include respond(tab-port)  {
                 top: 1rem;

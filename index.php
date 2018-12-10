@@ -93,19 +93,13 @@
     </head>
 
     <body>
-        <header class="header">
+        <!-- Header 1 Tiff mtn -->
+        <!-- <header class="header">
             <div class="header__topLine">
                 <div class="header__topLine--logo-box">
                     <img src="img/logo.png" alt="Logo" class="header__topLine--logo">
                 </div>
-                <div class="navigation">
-                    <!-- <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-        
-                    <label for="navi-toggle" class="navigation__button">
-                        <span class="navigation__icon">&nbsp;</span>
-                    </label> -->
-        
-                    
+                <div class="navigation">                   
                     <nav class="header__topLine--navigation">
                         <ul class="header__topLine--navigation-list">
                             <li class="header__topLine--navigation-item"><a href="#about" class="header__topLine--navigation-link">About Tiffany</a></li>
@@ -123,9 +117,37 @@
                     <span class="heading-primary--sub">are where life happens</span>
                 </h1>
                 <h1 class="header__text-box--heading-secondary">Tiffany Hansen, harpist</h1>
-                <!-- <a href="#section-weddings" class="btn btn--white btn--animated">Discover our tours</a> -->
+            </div>
+        </header> -->
+        <!-- end header 1 tiff mountain -->
+
+        <!-- Header 2 harphands -->
+        <header class="header">
+            <div class="header__topLine">
+                <div class="header__topLine--logo-box">
+                    <img src="img/logo.png" alt="Logo" class="header__topLine--logo">
+                </div>
+                <div class="navigation">                 
+                    <nav class="header__topLine--navigation">
+                        <ul class="header__topLine--navigation-list">
+                            <li class="header__topLine--navigation-item"><a href="#about" class="header__topLine--navigation-link">About Tiffany</a></li>
+                            <li class="header__topLine--navigation-item"><a href="#section-weddings" class="header__topLine--navigation-link">Weddings</a></li>
+                            <li class="header__topLine--navigation-item"><a href="#section-testimonials" class="header__topLine--navigation-link">Testimonials</a></li>
+                            <li class="header__topLine--navigation-item"><a href="#section-book" class="header__topLine--navigation-link">Contact</a></li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">Dreams</span>
+                    <span class="heading-primary--sub">are where life happens</span>
+                </h1>
+                <h1 class="header__text-box--heading-secondary">Tiffany Hansen, harpist</h1>
             </div>
         </header>
+        <!-- end header 2 harp hands -->
 
         <main>
             <section class="section-subLanding">
@@ -266,7 +288,7 @@
                             <p>
                                 Tiffany Hansen has played the harp for 29 years. Her musical pursuits have taken her to many places throughout Canada and the United States. She has been the Principal Harpist of the Calgary Civic Symphony for the past 14 years. One of her greatest enjoyments in playing such an elegant instrument is being able to provide a unique and memorable musical experience for weddings and special events. <br><br>
 
-                                <span>&quot;</span>Tiffany is an amazing musician with a natural talent for creating beauty. I would highly recommend her for any occasion.<span>&quot;</span>&nbsp;&nbsp;&nbsp;--Tisha Murvihill
+                                <span>&quot;</span>Tiffany is an amazing musician with a natural talent for creating a beautiful atmosphere. I would highly recommend her for any occasion.<span>&quot;</span>&nbsp;&nbsp;&nbsp;--Tisha Murvihill
                             </p>
                         </div>
                     </div>
@@ -295,72 +317,70 @@
                 
             </section>
         </div> 
-        <div class="u-center-text u-margin-top-huge">
-                    <a href="#section-book" class="btn btn--green">Contact Tiffany</a>
-                </div>
-            <section class="section-book" id='section-book'>
-                
-                <div class="row">
-                    <div class="book">
-                        <div class="book__form">
-                            <form action="index.php#section-book" class="form" name="submit" method='post'>
-                                <div class="u-margin-bottom-medium">
-                                    <h2 class="heading-secondary">
-                                        <?php if(isset($result)&&(!$result=='')) {echo $result.'<br>'; unset($result);} else {echo 'Contact Tiffany';} ?> 
-                                       
-                                    </h2>
-                                </div>  
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">
+                Contact
+            </h2>
+        </div>
+        <section class="section-book" id='section-book'>           
+            <div class="row">
+                <div class="book">
+                    <div class="book__form">
+                        <form action="index.php#section-book" class="form" name="submit" method='post'>
+                            <div class="u-margin-bottom-medium">
+                                <h2 class="heading-secondary">
+                                    <?php if(isset($result)&&(!$result=='')) {echo $result.'<br>'; unset($result);} else {echo 'Contact Tiffany';} ?>                                    
+                                </h2>
+                            </div>  
+                            <div class="form__text">
+                                <p>Email Tiffany at <a href="mailto: info@albertaharpist.com">info@albertaharpist.com</a> <span>   or...</span></p>
+                            </div>
+                            <div class="form__group">
+                                <label for="name" class="form__label">Full name</label>
+                                <input type="text" name="name" class="form__input" id="name" required>                           
+                            </div>
 
-                                <div class="form__text">
-                                    <p>Email Tiffany at <a href="mailto: info@albertaharpist.com">info@albertaharpist.com</a> <span>   or...</span></p>
+                            <div class="form__group">
+                                <label for="email" class="form__label">Email address</label>
+                                <input type="email" name="email" class="form__input" id="email" required>
+                                
+                            </div>
+                            <div class="form__group">
+                                <label for="phone" class="form__label">Optional Phone</label>
+                                <input type="phone" name="phone" class="form__input" id="phone">
+                            </div>
+                            <div class="form__group">
+                                <label for="message" class="form__label">Optional Message</label>
+                                <textarea rows='4' name="message" class="form__input" id="message"></textarea>
+                            </div>
+
+                            <!-- <div class="form__group u-margin-bottom-medium">
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="small" name="size">
+                                    <label for="small" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Small tour group
+                                    </label>
                                 </div>
 
-                                <div class="form__group">
-                                    <label for="name" class="form__label">Full name</label>
-                                    <input type="text" name="name" class="form__input" id="name" required>                           
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="large" name="size">
+                                    <label for="large" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Large tour group
+                                    </label>
                                 </div>
-
-                                <div class="form__group">
-                                    <label for="email" class="form__label">Email address</label>
-                                    <input type="email" name="email" class="form__input" id="email" required>
-                                    
-                                </div>
-                                <div class="form__group">
-                                    <label for="phone" class="form__label">Optional Phone</label>
-                                    <input type="phone" name="phone" class="form__input" id="phone">
-                                </div>
-                                <div class="form__group">
-                                    <label for="message" class="form__label">Optional Message</label>
-                                    <textarea rows='4' name="message" class="form__input" id="message"></textarea>
-                                </div>
-
-                                <!-- <div class="form__group u-margin-bottom-medium">
-                                    <div class="form__radio-group">
-                                        <input type="radio" class="form__radio-input" id="small" name="size">
-                                        <label for="small" class="form__radio-label">
-                                            <span class="form__radio-button"></span>
-                                            Small tour group
-                                        </label>
-                                    </div>
-
-                                    <div class="form__radio-group">
-                                        <input type="radio" class="form__radio-input" id="large" name="size">
-                                        <label for="large" class="form__radio-label">
-                                            <span class="form__radio-button"></span>
-                                            Large tour group
-                                        </label>
-                                    </div>
-                                </div> -->
-                                <!-- <div class="g-recaptcha" data-sitekey="6LcrP3sUAAAAACZXFfHU362MVFkMvhuTo83bRnNr"></div>
-                         -->
-                                <div class="form__group">
-                                    <button class="btn btn--green" type='submit' name='submit'>Send &rarr;</button>
-                                </div>
-                            </form>
-                        </div>
+                            </div> -->
+                            <!-- <div class="g-recaptcha" data-sitekey="6LcrP3sUAAAAACZXFfHU362MVFkMvhuTo83bRnNr"></div>
+                        -->
+                            <div class="form__group">
+                                <button class="btn btn--green" type='submit' name='submit'>Send &rarr;</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
         </main>
 
         <footer class="footer">
