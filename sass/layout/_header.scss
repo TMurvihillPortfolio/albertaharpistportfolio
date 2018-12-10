@@ -1,13 +1,39 @@
 .header {
+    //header 1 tiffany mountain
     height: 85vh;
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.0),
         rgba($color-primary-dark, 0.7)),
-    url(../img/HarpHands.jpg);
+    url(../img/TiffLakeMntWideSquare.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     position: relative;
+    //end header1 tiffany mountain
+
+    //header 2 harp hands
+    // height: 85vh;
+    // background-image: linear-gradient(
+    //     to right bottom,
+    //     rgba($color-primary-light, 0.0),
+    //     rgba($color-primary-dark, 0.7)),
+    // url(../img/HarpHands.jpg);
+    // background-size: cover;
+    // background-position: bottom;
+    // position: relative;
+    // end header 2 harp hands
+
+    //header 3 harp base
+    // height: 85vh;
+    // background-image: linear-gradient(
+    //     to right bottom,
+    //     rgba($color-primary-light, 0.0),
+    //     rgba($color-primary-dark, 0.7)),
+    // url(../img/HarpBase.jpg);
+    // background-size: cover;
+    // background-position: bottom;
+    // position: relative;
+    //end header 3 harp base
     
 
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {

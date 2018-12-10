@@ -4,27 +4,38 @@
     justify-content: space-between;
     
     //header 1 tiff mountain
-    // &--logo {
-    //     height: 3.5rem;
-       
-    //     &-box {          
-    //         position: absolute;
-    //         top: 1rem;
-    //         left: 2rem;
-    //     } 
-    // }
-    //end header 1 tiff mountain
-    //header 2 harp hands
     &--logo {
-        height: 5.5rem;
+        height: 3.5rem;
        
         &-box {          
             position: absolute;
-            top: 2rem;
-            left: 3rem;
+            top: 1rem;
+            left: 2rem;
         } 
     }
+    //end header 1 tiff mountain
+    //header 2 harp hands
+    // &--logo {
+    //     height: 5.5rem;
+       
+    //     &-box {          
+    //         position: absolute;
+    //         top: 2rem;
+    //         left: 3rem;
+    //     } 
+    // }
     //end header 2 harp hands
+    //header 3 harp base
+    // &--logo {
+    //     height: 4.5rem;
+       
+    //     &-box {          
+    //         position: absolute;
+    //         top: 5rem;
+    //         left: 0rem;
+    //     } 
+    // }
+    //end header 3 harp base
        
     &--navigation {
             &-list {

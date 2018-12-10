@@ -93,35 +93,6 @@
     </head>
 
     <body>
-        <!-- Header 1 Tiff mtn -->
-        <!-- <header class="header">
-            <div class="header__topLine">
-                <div class="header__topLine--logo-box">
-                    <img src="img/logo.png" alt="Logo" class="header__topLine--logo">
-                </div>
-                <div class="navigation">                   
-                    <nav class="header__topLine--navigation">
-                        <ul class="header__topLine--navigation-list">
-                            <li class="header__topLine--navigation-item"><a href="#about" class="header__topLine--navigation-link">About Tiffany</a></li>
-                            <li class="header__topLine--navigation-item"><a href="#section-weddings" class="header__topLine--navigation-link">Weddings</a></li>
-                            <li class="header__topLine--navigation-item"><a href="#section-testimonials" class="header__topLine--navigation-link">Testimonials</a></li>
-                            <li class="header__topLine--navigation-item"><a href="#section-book" class="header__topLine--navigation-link">Contact</a></li>
-                        </ul>
-                    </nav>
-                    
-                </div>
-            </div>
-            <div class="header__text-box">
-                <h1 class="heading-primary">
-                    <span class="heading-primary--main">Dreams</span>
-                    <span class="heading-primary--sub">are where life happens</span>
-                </h1>
-                <h1 class="header__text-box--heading-secondary">Tiffany Hansen, harpist</h1>
-            </div>
-        </header> -->
-        <!-- end header 1 tiff mountain -->
-
-        <!-- Header 2 harphands -->
         <header class="header">
             <div class="header__topLine">
                 <div class="header__topLine--logo-box">
@@ -131,9 +102,9 @@
                     <nav class="header__topLine--navigation">
                         <ul class="header__topLine--navigation-list">
                             <li class="header__topLine--navigation-item"><a href="#about" class="header__topLine--navigation-link">About Tiffany</a></li>
-                            <li class="header__topLine--navigation-item"><a href="#section-weddings" class="header__topLine--navigation-link">Weddings</a></li>
-                            <li class="header__topLine--navigation-item"><a href="#section-testimonials" class="header__topLine--navigation-link">Testimonials</a></li>
-                            <li class="header__topLine--navigation-item"><a href="#section-book" class="header__topLine--navigation-link">Contact</a></li>
+                            <li class="header__topLine--navigation-item"><a href="#weddings" class="header__topLine--navigation-link">Weddings</a></li>
+                            <li class="header__topLine--navigation-item"><a href="#" class="header__topLine--navigation-link">Testimonials</a></li>
+                            <li class="header__topLine--navigation-item"><a href="#contact" class="header__topLine--navigation-link">Contact</a></li>
                         </ul>
                     </nav>
                     
@@ -147,7 +118,6 @@
                 <h1 class="header__text-box--heading-secondary">Tiffany Hansen, harpist</h1>
             </div>
         </header>
-        <!-- end header 2 harp hands -->
 
         <main>
             <section class="section-subLanding">
@@ -159,17 +129,17 @@
 
                 <div class="row">
                     <div class="col-1-of-2">
-                        <h3 class="heading-tertiary u-margin-bottom-small">You're going to fall in love with the harp!</h3>
+                        <h3 class="heading-tertiary u-margin-bottom-small">A fabulous event deserves fabulous music!</h3>
                         <p class="paragraph">
-                            A fabulous event deserves fabulous music! The majestic harp adds a special, elegant touch that makes any occasion memorable.
+                             One of Tiffany's greatest enjoyments in playing such an elegant instrument is being able to provide a unique and memorable musical experience for weddings and special events. 
                         </p>
 
-                        <h3 class="heading-tertiary u-margin-bottom-small">What style of music do you prefer?</h3>
+                        <h3 class="heading-tertiary u-margin-bottom-small">What style of music is on your playlist?</h3>
                         <p class="paragraph">
                             From Bach to Beyonce, any piece sounds beautiful on the harp! Please feel free to <a href="contact">contact Tiffany</a> for more information, to schedule a free consultation, or to book an event. 
                         </p>
                         <div class="u-center-text u-margin-top-huge">
-                            <a href="#section-weddings" class="btn btn--green">More About Weddings</a>
+                            <a href="#weddings" class="btn btn--green">More About Weddings</a>
                         </div>
                         <!-- <a href="#section-weddings" class="btn-text">Learn more &rarr;</a> -->
                     </div>
@@ -200,7 +170,7 @@
                             <i class="feature-box__icon icon-basic-world"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Weddings</h3>
                             <p class="feature-box__text">
-                                Wedding packages include music for the bridal entrance and the couple's triumphant walk back down the aisle. <a href="#section-weddings">Learn More...</a></p>
+                                Wedding packages include music for the bridal entrance and the couple's triumphant walk back down the aisle. <a href="#weddings">Learn More...</a></p>
                         </div>
                     </div>
 
@@ -209,7 +179,7 @@
                             <i class="feature-box__icon icon-basic-compass"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Receptions</h3>
                             <p class="feature-box__text">
-                                The harp can provides magical ambience for your reception. Do you have a song in mind? Let Tiffany know! <a href="#section-book">Contact Tiffany</a>
+                                The harp provides an elegant, magical atmosphere for your reception. Do you have a song in mind? <br> <a href="#contact">Contact Tiffany</a>
                             </p>
                         </div>
                     </div>
@@ -219,7 +189,7 @@
                             <i class="feature-box__icon icon-basic-map"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Special Occasions</h3>
                              <p class="feature-box__text">
-                                Anniversaries, Christmas Parties, Birthday Celebrations... the harp will make any event a memorable one!<a href="contact">Contact Tiffany</a>
+                                Anniversaries, Christmas Parties, Birthday Celebrations... the harp will make any event memorable!<br><a href="#contact">Contact Tiffany</a>
                             </p>
                         </div>
                     </div>  
@@ -229,16 +199,16 @@
                             <i class="feature-box__icon icon-basic-heart"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Harp Lessons</h3>
                             <p class="feature-box__text">
-                                Have you always wanted to learn the harp? Tiffany would love to teach you how to sound beautiful on the harp. <a href="contact">Contact Tiffany</a>
+                                Have you always wanted to learn the harp? Tiffany would love to teach you how to sound beautiful on the harp.<br> <a href="#contact">Contact Tiffany</a>
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section-weddings" id="section-weddings">
+            <section class="section-weddings">
                 <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">
+                    <h2 class="heading-secondary" id="weddings">
                         More About Weddings
                     </h2>
                 </div>
@@ -254,11 +224,11 @@
                </div>
                
                 <div class="u-center-text u-margin-top-huge">
-                    <a href="#section-book" class="btn btn--green">Contact Tiffany</a>
+                    <a href="#contact" class="btn btn--green">Contact Tiffany</a>
                 </div>
             </section>
 
-            <section class="section-about">
+            <section class="section-about" id="about">
                 
                 <div class="bg-video">
                      
@@ -288,7 +258,7 @@
                             <p>
                                 Tiffany Hansen has played the harp for 29 years. Her musical pursuits have taken her to many places throughout Canada and the United States. She has been the Principal Harpist of the Calgary Civic Symphony for the past 14 years. One of her greatest enjoyments in playing such an elegant instrument is being able to provide a unique and memorable musical experience for weddings and special events. <br><br>
 
-                                <span>&quot;</span>Tiffany is an amazing musician with a natural talent for creating a beautiful atmosphere. I would highly recommend her for any occasion.<span>&quot;</span>&nbsp;&nbsp;&nbsp;--Tisha Murvihill
+                                <span>&quot;</span>Tiffany is an amazing musician and a wonderful harpist. I would highly recommend her for any occasion.<span>&quot;</span>&nbsp;&nbsp;&nbsp;--Tisha Murvihill
                             </p>
                         </div>
                     </div>
@@ -322,7 +292,7 @@
                 Contact
             </h2>
         </div>
-        <section class="section-book" id='section-book'>           
+        <section class="section-book" id='contact'>           
             <div class="row">
                 <div class="book">
                     <div class="book__form">

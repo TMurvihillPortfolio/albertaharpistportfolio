@@ -773,9 +773,9 @@ body {
 
 .header {
   height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(255, 246, 229, 0), rgba(110, 90, 53, 0.7)), url(../img/HarpHands.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 246, 229, 0), rgba(110, 90, 53, 0.7)), url(../img/TiffLakeMntWideSquare.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   position: relative; }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .header {
@@ -812,11 +812,11 @@ body {
   display: flex;
   justify-content: space-between; }
   .header__topLine--logo {
-    height: 5.5rem; }
+    height: 3.5rem; }
     .header__topLine--logo-box {
       position: absolute;
-      top: 2rem;
-      left: 3rem; }
+      top: 1rem;
+      left: 2rem; }
   .header__topLine--navigation-list {
     display: flex;
     position: absolute;
