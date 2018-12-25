@@ -88,7 +88,7 @@
 
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
+        <script src="js/script.js"></script>
         <title>Tiffany Hansen | Wedding Music | harpist</title>
     </head>
 
@@ -103,7 +103,6 @@
                         <ul class="header__topLine--navigation-list">
                             <li class="header__topLine--navigation-item"><a href="#about" class="header__topLine--navigation-link">About Tiffany</a></li>
                             <li class="header__topLine--navigation-item"><a href="#weddings" class="header__topLine--navigation-link">Weddings</a></li>
-                            <li class="header__topLine--navigation-item"><a href="#" class="header__topLine--navigation-link">Testimonials</a></li>
                             <li class="header__topLine--navigation-item"><a href="#contact" class="header__topLine--navigation-link">Contact</a></li>
                         </ul>
                     </nav>
@@ -123,7 +122,7 @@
             <section class="section-subLanding">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
-                        Weddings, Special Occasions. ..
+                        Weddings, Special Occasions&hellip;
                     </h2>
                 </div>
 
@@ -179,7 +178,7 @@
                             <i class="feature-box__icon icon-basic-compass"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Receptions</h3>
                             <p class="feature-box__text">
-                                The harp provides an elegant, magical atmosphere for your reception. Do you have a song in mind? <br> <a href="#contact">Contact Tiffany</a>
+                                The harp can provide an elegant, magical atmosphere for your reception. Do you have a song in mind? <br> <a href="#contact">Contact Tiffany</a>
                             </p>
                         </div>
                     </div>
@@ -194,7 +193,7 @@
                         </div>
                     </div>  
 
-                    <div class="col-1-of-4">
+                    <div class="col-1-of-4" id="tester">
                         <div class="feature-box">
                             <i class="feature-box__icon icon-basic-heart"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Harp Lessons</h3>
@@ -214,18 +213,89 @@
                 </div>
 
                <div class="weddingsContainer">
-                   <div class="weddingsContainer__image">
-                       <img src="img/tiffany_weddingBrushOutBag.jpg">
-                   </div>
+                   <!-- <div class="weddingsContainer__image">
+                       <img src="img/tiffany_weddingBrushOutBag2.jpg">
+                   </div> -->
+
+                   <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 9</div>
+                      <img src="img/HarpSunlight.jpg" style="width:100%; margin-top: 0;">
+                      <!-- <div class="text">Caption Three</div> -->
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 9</div>
+                      <img src="img/tiffany_weddingBrushOutBag2.jpg" style="width:100%; margin-top:0;">
+                      <!-- <div class="text">Caption Text</div> -->
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 9</div>
+                      <img src="img/HarpYellow.jpg" style="width:100%; margin-top: -13%;">
+                      <!-- <div class="text">Caption Three</div> -->
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">4 / 9</div>
+                      <img src="img/TiffAtLakeLouise.jpg" style="width:100%; margin-top: -10%;">
+                      <!-- <div class="text">Caption Three</div> -->
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">5 / 9</div>
+                      <img src="img/HarpHands.jpg" style="width:100%">
+                      <!-- <div class="text">Caption Two</div> -->
+                    </div>                 
+                    <div class="mySlides fade">
+                      <div class="numbertext">6 / 9</div>
+                      <img src="img/HarpBase.jpg" style="width:100%;">
+                      <!-- <div class="text">Caption Three</div> -->
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">7 / 9</div>
+                      <img src="img/tiffanyBrownTint.gif" style="width:100%; margin-top: -27%;">
+                      <!-- <div class="text">Caption Three</div> -->
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">8 / 9</div>
+                      <img src="img/HarpAtLakeLouise.jpg" style="width:100%; margin-top: -13%;">
+                      <!-- <div class="text">Caption Three</div> -->
+                    </div>           
+                    <div class="mySlides fade">
+                      <div class="numbertext">9 / 9</div>
+                      <img src="img/TiffSmiling.jpg" style="width:100%; margin-top:-60%;">
+                      <!-- <div class="text">Caption Three</div> -->
+                    </div>
+                    
+                  
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                  <br>
+                  
+                  <!-- The dots/circles -->
+                  <div class = "dotContainer">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                    <span class="dot" onclick="currentSlide(7)"></span> 
+                    <span class="dot" onclick="currentSlide(8)"></span> 
+                    <span class="dot" onclick="currentSlide(9)"></span> 
+                  </div>
+
                    <div class="weddingsContainer__text">
-                       <h3 class="heading-tertiary u-margin-bottom-small">Make your wedding extraordinary</h3>
-                       <p>Here we need a bunch of text about what the harp adds to a wedding. Something like, from the first sounds of the entrance of the bride to the final moments of an exquisite ceremony, the harp can create the atmosphere that you are dreaming of (ugh, this is certainly not the text content you are dreaming of).  Tiffany has added an incredible specialness (ok, this is really, really bad copy) to many weddings in the Calgary area.<br><br> Tiffany offers a free consultation and will customize all of the music to your musical tastes. If you are not sure, she can choose elegant, appropriate music for you. <a href="#section-book">Contact Tiffany</a></p>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Make your wedding extraordinary</h3>
+                        <p><span>From Confetti Magazine (Fall/Winter 2018)  --  </span><br> When choosing music for your ceremony, hiring a live musician is infinitely more elegant than using a sound system. Professional musicians are trained to adapt to any situation, such as inconsistencies in the timing of your procession. They also add a tasteful pause for your officiant to say "Please rise," just before you and your betrothed make your way down the aisle. They can also incorporate other cues into your procession at your request.<br><br> Tiffany offers a free consultation and will customize all of the music to your musical tastes.</p>
+                        <div class="u-center-text u-margin-top">
+                            <a href="#contact" class="btn btn--green">Contact Tiffany</a>
+                        </div>
                    </div>
                </div>
                
-                <div class="u-center-text u-margin-top-huge">
-                    <a href="#contact" class="btn btn--green">Contact Tiffany</a>
-                </div>
+                
             </section>
 
             <section class="section-about" id="about">
@@ -370,7 +440,6 @@
                         <ul class="footer__list">
                             <li class="footer__item"><a href="#section-about" class="footer__link">About Tiffany</a></li>
                             <li class="footer__item"><a href="#section-weddings" class="footer__link">Weddings</a></li>
-                            <li class="footer__item"><a href="#section-testimonials" class="footer__link">Testimonials</a></li>
                             <li class="footer__item"><a href="#section-book" class="footer__link">Contact</a></li>
                         </ul>
                     </div>

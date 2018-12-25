@@ -21,7 +21,6 @@ body {
 .heading-primary {
     color: $color-white;
     text-transform: uppercase;
-
     backface-visibility: hidden;
     margin-bottom: 6rem;
 
@@ -61,6 +60,7 @@ body {
 .heading-secondary {
     font-size: 3.5rem;
     text-transform: uppercase;
+
     font-weight: 700;
     display: inline-block;
     background-image: linear-gradient(to right, $color-primary-lesslight, $color-primary-dark);
@@ -68,6 +68,7 @@ body {
     color: transparent;
     letter-spacing: .2rem;
     transition: all .2s;
+
 
     @include respond(tab-port) {
         font-size: 3rem;
