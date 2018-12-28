@@ -96,7 +96,7 @@
         <header class="header">
             <div class="header__topLine">
                 <div class="header__topLine--logo-box">
-                    <img src="img/logo.png" alt="Logo" class="header__topLine--logo">
+                    <img style="height: 9.5rem; opacity: .8" src="img/musiclogonobacktancolor.png" alt="Logo made up of music symbols" class="header__topLine--logo">
                 </div>
                 <div class="navigation">                 
                     <nav class="header__topLine--navigation">
