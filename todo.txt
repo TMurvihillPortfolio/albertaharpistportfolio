@@ -1,3 +1,5 @@
+style "dreams are where life happens" without a heading tag (SEO)
+
 get logo styled through css rather than inline
 
 Add big quotes to confetti quotes

@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
     include 'config.php';
     
     if (isset($_POST['submit'])) {
@@ -73,11 +73,10 @@
             }
         }       
     }
-?>
+?> -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="description=" content="Professional Harpist Tiffany Hansen provides elegant, beautiful music for weddings, parties, funerals, or any special occasion.">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -90,14 +89,14 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         <script src="js/script.js"></script>
-        <title>Tiffany Hansen | Wedding Music | Harpist | Wedding Ceremony</title>
+        <title>Tiffany Hansen | Wedding Music | harpist</title>
     </head>
 
     <body>
         <header class="header">
             <div class="header__topLine">
                 <div class="header__topLine--logo-box">
-                    <img src="img/musiclogonobacktancolor1.png" alt="Logo made up of music symbols" class="header__topLine--logo">
+                    <img style="height: 9.5rem; opacity: .8" src="img/musiclogonobacktancolor.png" alt="Logo made up of music symbols" class="header__topLine--logo">
                 </div>
                 <div class="navigation">                 
                     <nav class="header__topLine--navigation">
@@ -141,19 +140,20 @@
                         <div class="u-center-text u-margin-top-huge">
                             <a href="#weddings" class="btn btn--green">More About Weddings</a>
                         </div>
+                        <!-- <a href="#section-weddings" class="btn-text">Learn more &rarr;</a> -->
                     </div>
                     <div class="col-1-of-2">
                         <div class="composition">
 
-                            <img alt="The base of a beautiful gold harp."
+                            <img alt="Photo 1"
                                  class="composition__photo composition__photo--p1"
                                  src="img/HarpBase.jpg">
 
-                            <img alt="Closeup of hands playing the harp."
+                            <img alt="Photo 2"
                                  class="composition__photo composition__photo--p2"
                                  src="img/HarpHands.jpg">
 
-                            <img alt="Tiffany playing the harp in a long gown."
+                            <img alt="Photo 3"
                                  class="composition__photo composition__photo--p3"
                                  src="img/tiffany.jpg">
                         </div>
@@ -188,7 +188,7 @@
                             <i class="feature-box__icon icon-basic-map"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Special Occasions</h3>
                              <p class="feature-box__text">
-                                Anniversaries, Christmas Parties, Funerals, Birthday Celebrations... the harp will make any event memorable!<br><a href="#contact">Contact Tiffany</a>
+                                Anniversaries, Christmas Parties, Birthday Celebrations... the harp will make any event memorable!<br><a href="#contact">Contact Tiffany</a>
                             </p>
                         </div>
                     </div>  
@@ -213,8 +213,12 @@
                 </div>
 
                <div class="weddingsContainer">
+                   <!-- <div class="weddingsContainer__image">
+                       <img src="img/tiffany_weddingBrushOutBag2.jpg">
+                   </div> -->
 
-                <div class="slideshow-container">
+                   <div class="slideshow-container">
+
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides fade">
                       <div class="numbertext">1 / 9</div>
@@ -260,12 +264,14 @@
                       <div class="numbertext">9 / 9</div>
                       <img src="img/TiffSmiling.jpg" class="u-width-100" style="margin-top:-60%;" alt="Closeup of Tiffany at the harp with a big smile for the camera.">
                       <!-- <div class="text">Caption Three</div> -->
-                    </div>                                    
+                    </div>
+                                     
                     <!-- Next and previous buttons -->
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
                   </div>
-                  <br>                 
+                  <br>
+                  
                   <!-- The dots/circles -->
                   <div class = "dotContainer">
                     <span class="dot" onclick="currentSlide(1)"></span> 
@@ -280,36 +286,33 @@
                   </div>
 
                    <div class="weddingsContainer__text">
-                        <h3 class="heading-tertiary">Make your wedding extraordinary</h3>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Make your wedding extraordinary</h3>
                         <p><span>From Confetti Magazine (Fall/Winter 2018)  --  </span><br> When choosing music for your ceremony, hiring a live musician is infinitely more elegant than using a sound system. Professional musicians are trained to adapt to any situation, such as inconsistencies in the timing of your procession. They also add a tasteful pause for your officiant to say "Please rise," just before you and your betrothed make your way down the aisle. They can also incorporate other cues into your procession at your request.<br><br> Tiffany offers a free consultation and will customize all of the music to your musical tastes.</p>
                         <div class="u-center-text u-margin-top">
                             <a href="#contact" class="btn btn--green">Contact Tiffany</a>
                         </div>
                    </div>
-               </div>               
+               </div>                
             </section>
-
             <section class="section-about" id="about">               
-                <div class="aboutContainer">
-                    <div class="row">
-                        <div class="story">
-                            <div class="story__text">
-                                <div class="u-center-text u-margin-bottom-small">
-                                    <h2 class="heading-secondary">
-                                        About Tiffany
-                                    </h2>
-                                </div> 
-                                <p>
-                                    Tiffany Hansen has played the harp for 29 years. Her musical pursuits have taken her to many places throughout Canada and the United States. She has been the Principal Harpist of the Calgary Civic Symphony for the past 14 years. One of her greatest enjoyments in playing such an elegant instrument is being able to provide a unique and memorable musical experience for weddings and special events. <br><br>
-
-                                    <span>&quot;</span>Tiffany is an amazing musician and a wonderful harpist. I would highly recommend her for any occasion.<span>&quot;</span>&nbsp;&nbsp;&nbsp;--Tisha Murvihill
-                                </p>
-                            </div>
+                <div class="aboutContainer">                   
+                <div class="row">
+                    <div class="story">
+                        <div class="story__text">
+                            <div class="u-center-text u-margin-bottom-small">
+                                <h2 class="heading-secondary">
+                                    About Tiffany
+                                </h2>
+                            </div> 
+                            <p>
+                                Tiffany Hansen has played the harp for 29 years. Her musical pursuits have taken her to many places throughout Canada and the United States. She has been the Principal Harpist of the Calgary Civic Symphony for the past 14 years. One of her greatest enjoyments in playing such an elegant instrument is being able to provide a unique and memorable musical experience for weddings and special events. <br><br>
+                                <span>&quot;</span>Tiffany is an amazing musician and a wonderful harpist. I would highly recommend her for any occasion.<span>&quot;</span>&nbsp;&nbsp;&nbsp;--Tisha Murvihill
+                            </p>
                         </div>
                     </div>
-                </div> 
+                </div>              
             </section>
-        
+        </div> 
         <div class="u-center-text u-margin-bottom-big">
             <h2 class="heading-secondary">
                 Contact
@@ -322,7 +325,8 @@
                         <form action="index.php#section-book" class="form" name="submit" method='post'>
                             <div class="u-margin-bottom-medium">
                                 <h2 class="heading-secondary">
-                                    <?php if(isset($result)&&(!$result=='')) {echo $result.'<br>'; unset($result);} else {echo 'Contact Tiffany';} ?>                                    
+                                    Contact Tiffany
+                                    <!-- <?php if(isset($result)&&(!$result=='')) {echo $result.'<br>'; unset($result);} else {echo 'Contact Tiffany';} ?>                                     -->
                                 </h2>
                             </div>  
                             <div class="form__text">
@@ -346,7 +350,7 @@
                                 <label for="message" class="form__label">Optional Message</label>
                                 <textarea rows='4' name="message" class="form__input" id="message"></textarea>
                             </div>
-                            <div class="form__group">
+                       <div class="form__group">
                                 <button class="btn btn--green" type='submit' name='submit'>Send &rarr;</button>
                             </div>
                         </form>
@@ -359,8 +363,8 @@
         <footer class="footer">
             <div class="footer__logo-box">
                 <picture class="footer__logo">
-                    <img alt="Full logo" src="img/logo.png">
-                </picture>               
+                    <img alt="Tiffany Hansen's name in beautiful script." src="img/logo.png">
+                </picture>              
             </div>
             <div class="row">
                 <div class="col-1-of-2">
