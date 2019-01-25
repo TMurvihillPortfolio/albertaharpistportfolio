@@ -15,29 +15,20 @@
     // }
     //end header 1 tiff mountain
     //header 2 harp hands
-    &--logo {
-        height: 9.5rem; 
-        opacity: .6;
-       
-        &-box {          
-            position: absolute;
-            top: 2rem;
-            left: 3rem; 
-        } 
+    &--logo-box {
+        position: absolute;
+        top: 0rem;
+        left: 0rem;
+        padding: .5rem 1rem;
+        @include respond(phone) {
+            padding: 4rem .5rem; 
+        }
     }
-    //end header 2 harp hands
-    //header 3 harp base
-    // &--logo {
-    //     height: 4.5rem;
-       
-    //     &-box {          
-    //         position: absolute;
-    //         top: 5rem;
-    //         left: 0rem;
-    //     } 
-    // }
-    //end header 3 harp base
-       
+    &--logo {
+        height: 9.5rem;
+        opacity: .6;
+    }
+     
     &--navigation {
             &-list {
                 display:flex;

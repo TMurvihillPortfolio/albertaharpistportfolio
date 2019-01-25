@@ -1,6 +1,5 @@
 <?php
 
-
  //email info for contact form
  $email = 'info@albertaharpist.com';
  $siteEmailRecipient = "Tiffany";

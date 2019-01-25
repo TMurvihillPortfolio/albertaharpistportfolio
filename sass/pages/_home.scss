@@ -4,9 +4,9 @@
     margin-top: -28vh;
 
     @include respond(tab-port) {
-        padding: 20rem 0;
+        padding: 30rem 6rem;       
     }
-}
+} 
 
 .section-features {
     padding: 20rem 0;
@@ -24,6 +24,7 @@
     }
 
     @include respond(tab-port) {
+        margin-top: 0;   
         padding: 10rem 0;
     }
 

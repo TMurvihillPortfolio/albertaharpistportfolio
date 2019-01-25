@@ -1,18 +1,7 @@
 .header {
-    //header 1 tiffany mountain
-    // height: 85vh;
-    // background-image: linear-gradient(
-    //     to right bottom,
-    //     rgba($color-primary-light, 0.0),
-    //     rgba($color-primary-dark, 0.7)),
-    // url(../img/TiffLakeMntWideSquare.jpg);
-    // background-size: cover;
-    // background-position: center;
-    // position: relative;
-    //end header1 tiffany mountain
-
     //header 2 harp hands
     height: 85vh;
+    
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.0),
@@ -21,75 +10,37 @@
     background-size: cover;
     background-position: bottom;
     position: relative;
-    // end header 2 harp hands
-
-    //header 3 harp base
-    // height: 85vh;
-    // background-image: linear-gradient(
-    //     to right bottom,
-    //     rgba($color-primary-light, 0.0),
-    //     rgba($color-primary-dark, 0.7)),
-    // url(../img/HarpBase.jpg);
-    // background-size: cover;
-    // background-position: bottom;
-    // position: relative;
-    //end header 3 harp base
-    
 
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
         height: 95vh;
     }
-
     @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
             only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
             only screen and (min-width: 125em) {
-        //header 1 tiffany mountain
-        // background-image: linear-gradient(
-        //     to right bottom,
-        //     rgba($color-primary-light, 0.8),
-        //     rgba($color-primary-dark, 0.8)),
-        // url(../img/TiffLakeMntWideSquare.jpg);
-        //end header 1 tiffany mountain
-        //header 2 harp hands
         background-image: linear-gradient(
             to right bottom,
             rgba($color-primary-light, 0.8),
             rgba($color-primary-dark, 0.8)),
         url(../img/HarpHands.jpg);
-        //endheader 2 harp hands
-        //header 3 harp base
-        // background-image: linear-gradient(
-        //     to right bottom,
-        //     rgba($color-primary-light, 0.8),
-        //     rgba($color-primary-dark, 0.8)),
-        // url(../img/HarpBase.jpg);
-        //end header 3 harpbase
     }
 
     @include respond(portrait) {
         background-position: bottom right;
     }
-    @include respond(phone) {
+    @include respond(tab-port) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);  
+        //margin-bottom: 8rem;         
     }
 
-    &__logo-box {
-        position: absolute;
-        top: 0rem;
-        left: 0rem;
-        padding: .5rem 1rem;
-    }
-
-    &__logo {
-        height: 3.5rem;
-    }
-    
     &__text-box {
         position: absolute;
         top: 55%;
+        @include respond(phone) {
+            top: 50%; 
+        }
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -99,6 +50,11 @@
             font-weight: 400;
             font-size: 65px;
             color: white;
+
+            @include respond(phone) {
+                font-size: 55px;
+                line-height: 1.3;
+            }
         }
     }
 }
