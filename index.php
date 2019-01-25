@@ -1,79 +1,7 @@
-<!-- <?php
-    // include 'config.php';
-    
-    // if (isset($_POST['submit'])) {
-    //     $result = '';
-    //     $inputEmail = '';
-    //     $inputName = '';
-    //     $inputMessage = '';
-    //     $inputPhone = '';
-
-    //     if(isset($_POST['g-recaptcha-response'])  && isset($recaptchaSecretKey)) {
-    //         $recaptchaArray = ['secret' => $recaptchaSecretKey,
-    //         'response' => $_POST['g-recaptcha-response']
-    //         ];
-    //     }
-
-    //     // $curl = curl_init();
-    //     // curl_setopt($curl, CURLOPT_URL, 'https://www.google.com/recaptcha/api/siteverify');
-    //     // curl_setopt($curl, CURLOPT_POST, true);
-    //     // curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($recaptchaArray));
-    //     // curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-    //     // $response = json_decode(curl_exec($curl));
-    //     // curl_close($curl);
-      
-    //     // if (isset($response->success) && !$response->success == true) {
-    //     //     $result = 'ReCaptcha validation failed.';
-    //     // }
-
-    //     if (isset($result) && !$result == 'ReCaptcha validation failed.') {
-    //         if(isset($_POST['name'])) {
-    //             $inputName = $_POST['name'];
-    //         }
-    //         if(isset($_POST['email'])) {
-    //             $inputEmail = $_POST['email'];
-    //         }
-    //         if(isset($_POST['phone'])) {
-    //             $inputPhone = $_POST['phone'];
-    //         }
-    //         if(isset($_POST['message'])) {
-    //             $inputMessage = $_POST['message'];
-    //         }
-            
-    //         // $inputPhone = $_POST['phone'];
-    //         // $inputMessage = $_POST['message'];
-    
-    //         $mail_body = '<html>
-    //         <body style="font-family: Arial, Helvetica, sans-serif;
-    //                             line-height:1.8em;">
-    //         <p>Hello '.$siteEmailRecipient.', <br><br> A message with the following information was sent via the contact form on the albertaharpist.com website:</p>
-    //         <p>Name: '.$inputName.'<br>
-    //         Email: '.$inputEmail.'<br>
-    //         Phone: '.$inputPhone.'<br>
-    //         Message: '.$inputMessage.'<br>         
-    //         <br>
-    //         Have a nice day!<br>
-    //         <a href="https://albertaharpist.com">albertharpist.com</a>
-    //         </p>
-    //         </body>
-    //         </html>';
-        
-    //         $subject = "Message from albertaharpist.com contact form";
-    //         $headers = "From: albertaharpist.com" . "\r\n";
-    //         $headers .= "MIME-Version: 1.0" . "\r\n";
-    //         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-            
-    //         //Error Handling for PHPMailer
-    //         if(!mail($email, $subject, $mail_body, $headers)){
-    //             $result = "Email failed to send.";
-    //         }
-    //         else{
-    //             $result = "Email sent!";
-    //             unset($POST);
-    //         }
-    //     }       
-    // }
-?> -->
+<?php
+    include 'config.php';
+    include 'contactMailer.php';  
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -145,9 +73,6 @@
                     </div>
                     <div class="col-1-of-2 section-sublanding__text--photos">
                         <div class="composition"> 
-                            <!-- <div class="composition__photo"></div>
-                            <div class="composition__photo"></div>
-                            <div class="composition__photo"></div>  -->
                             <img alt="The base of a beautiful gold harp."
                                  class="composition__photo composition__photo--p1"
                                  src="img/HarpBase.jpg">
@@ -164,8 +89,7 @@
                 </div>
             </section>
 
-            <section class="section-features">
-                
+            <section class="section-features">               
                 <div class="row">
                     <div class="col-1-of-4">
                         <div class="feature-box">
@@ -175,7 +99,6 @@
                                 Wedding packages include music for the bridal entrance and the couple's triumphant walk back down the aisle. <a href="#weddings">Learn More...</a></p>
                         </div>
                     </div>
-
                     <div class="col-1-of-4">
                         <div class="feature-box">
                             <i class="feature-box__icon icon-basic-compass"></i>
@@ -185,7 +108,6 @@
                             </p>
                         </div>
                     </div>
-
                     <div class="col-1-of-4">
                         <div class="feature-box">
                             <i class="feature-box__icon icon-basic-map"></i>
@@ -195,7 +117,6 @@
                             </p>
                         </div>
                     </div>  
-
                     <div class="col-1-of-4" id="tester">
                         <div class="feature-box">
                             <i class="feature-box__icon icon-basic-heart"></i>
@@ -325,8 +246,7 @@
                         <form action="index.php#section-book" class="form" name="submit" method='post'>
                             <div class="u-margin-bottom-medium">
                                 <h2 class="heading-secondary">
-                                    Contact Tiffany
-                                    <!-- <?php if(isset($result)&&(!$result=='')) {echo $result.'<br>'; unset($result);} else {echo 'Contact Tiffany';} ?>                                     -->
+                                    <?php if(isset($result)&&(!$result=='')) {echo $result.'<br>'; unset($result);} else {echo 'Contact Tiffany';} ?>                                    
                                 </h2>
                             </div>  
                             <div class="form__text">
