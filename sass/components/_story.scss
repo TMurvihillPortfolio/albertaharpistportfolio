@@ -11,8 +11,7 @@
 
     @include respond(tab-port) {
         width: 100%;
-        padding: 4rem;
-        padding-left: 7rem;
+        padding: 2rem;
     }
 
     @include respond(phone) {
@@ -49,7 +48,10 @@
     // }
 
     &__text {
-        margin: 5rem;
+        margin: 5rem;  
+        @include respond(phone) {
+            margin:1rem;    
+        }  
         transform: skewX(12deg);
 
         &p>span {
@@ -60,7 +62,14 @@
         @include respond(phone) {
             transform: skewX(0);
         }
-    }
+        &>p>span:nth-of-type(1),
+        &>p>span:nth-of-type(2)
+         {            
+            font-family: 'alex brush', 'cursive'; 
+            font-size: 30px;    
+            line-height: .3;        
+        }
+    }  
    
     // &__caption {
     //     position: absolute;
