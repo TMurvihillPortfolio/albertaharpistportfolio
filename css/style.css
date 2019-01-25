@@ -375,9 +375,13 @@ body {
         font-size: 4rem; } }
 
 .composition {
-  position: relative; }
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: auto; }
   .composition__photo {
     width: 20em;
+    height: 25em;
     margin: auto;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 24px;
@@ -395,44 +399,43 @@ body {
         position: relative;
         box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
     .composition__photo--p1 {
-      left: 8em;
+      left: -2em;
       top: -2.5em;
       height: 29em; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--p1 {
-          top: -4em;
-          left: 18em;
+          top: -5em;
+          left: 3em;
           height: 21em;
           width: 15em;
           border-radius: 8px;
           transform: scale(1.2); } }
     .composition__photo--p2 {
-      left: 25em;
-      top: 2em;
+      left: 14em;
+      top: 1em;
       height: 29em; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--p2 {
-          top: -0.5em;
-          left: 18em;
+          top: -2em;
+          left: 3.5em;
           height: 21em;
           width: 15em;
           border-radius: 8px;
           transform: scale(1.2);
           z-index: 100; } }
     .composition__photo--p3 {
-      left: 13em;
-      top: 15em;
+      left: 5em;
+      top: 22em;
       height: 29em; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--p3 {
-          top: 15em;
-          left: -5em;
+          top: -10em;
+          left: 10em;
           height: 21em;
           width: 14em;
           border-radius: 8px;
           transform: scale(1.2);
-          z-index: 200;
-          wrap: no-wrap; } }
+          z-index: 200; } }
     .composition__photo:hover {
       outline: 1.5rem solid #b3a17f;
       transform: scale(1.05) translateY(-0.5rem);
@@ -972,7 +975,10 @@ body {
   margin-top: -28vh; }
   @media only screen and (max-width: 56.25em) {
     .section-subLanding {
-      padding: 30rem 6rem; } }
+      padding: 30rem 0 3rem 0; } }
+  .section-subLanding__text {
+    margin-left: 4rem;
+    margin-right: 4rem; }
 
 .section-features {
   padding: 20rem 0;

@@ -1,8 +1,13 @@
 .composition {
     position: relative;
+    width: 300px;  
+    height: 400px;    
+    //background-color: tomato;    
+    margin: auto;   
 
     &__photo {
         width: 20em;
+        height: 25em;
         margin: auto;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
         border-radius: 24px;
@@ -22,12 +27,12 @@
         }
 
         &--p1 {
-            left: 8em;
+            left: -2em;
             top: -2.5em;
             height: 29em;         
             @include respond(tab-port)  {
-                top: -4em;    
-                left: 18em;       
+                top: -5em;    
+                left: 3em;       
                 height: 21em;
                 width: 15em;
                 border-radius: 8px;   
@@ -38,13 +43,13 @@
             }
         }
         &--p2 {
-            left: 25em;
-            top: 2em;
+            left: 14em;
+            top: 1em;
             height: 29em;
 
             @include respond(tab-port)  {
-                top: -0.5em;   
-                left: 18em;     
+                top: -2em;   
+                left: 3.5em;     
                 height: 21em;
                 width: 15em;
                 border-radius: 8px;   
@@ -57,19 +62,18 @@
         }
 
         &--p3 {
-            left: 13em;
-            top: 15em;
-            height: 29em;
+            left: 5em;
+            top: 22em;
+            height: 29em;       
 
             @include respond(tab-port)  {
-                top: 15em;  
-                left: -5em; 
+                top: -10em;     
+                left: 10em;   
                 height: 21em;
                 width: 14em;  
                 border-radius: 8px;   
                 transform: scale(1.2);
-                z-index: 200;
-                wrap: no-wrap;       
+                z-index: 200;      
             }
         }
 

@@ -4,7 +4,12 @@
     margin-top: -28vh;
 
     @include respond(tab-port) {
-        padding: 30rem 6rem;       
+        padding: 30rem 0 3rem 0;            
+    }
+
+    &__text {
+        margin-left: 4rem;
+        margin-right: 4rem;            
     }
 } 
 
