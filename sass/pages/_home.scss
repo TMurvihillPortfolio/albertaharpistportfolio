@@ -48,10 +48,10 @@
 .section-about {
     position: relative;
     margin-bottom: 8rem;
-    //padding: 15rem 0;
+    
 
     @include respond(tab-port) {
-        padding: 10rem 0;
+        padding: 10rem 0 0;
     }
 }    
 
@@ -61,7 +61,9 @@
     background-image: linear-gradient(to bottom right, $color-primary-dark, $color-primary-light);
 
     @include respond(tab-port) {
-        padding: 10rem 0;
+        background-image: none;
+        background-color: $color-grey-dark-3;          
+        padding: 0;
     }    
 }
 
@@ -81,16 +83,17 @@
         background-image: linear-gradient(105deg, 
         rgba($color-white, .9) 0%,
         rgba($color-white, .9) 65%,
-        transparent 65%) ,
-url(../img/tiffany_mountainCropRight.jpg);
+        transparent 65%),
+        url(../img/tiffany_mountainCropVeryRight.jpg);   
         background-size: cover;
     }
 
     @include respond(tab-port) {
-        background-image: linear-gradient(to right, 
-        rgba($color-white, .9) 0%,
-        rgba($color-white, .9) 100%),
-url(../img/tiffany_mountainCropRight.jpg);
+        // background-image: linear-gradient(to right, 
+        // rgba($color-white, .9) 0%,
+        // rgba($color-white, .9) 100%),
+        // url(../img/tiffany_mountainCropRight.jpg);
+        background-image: none;  
     }
 
     &__form {
@@ -103,6 +106,12 @@ url(../img/tiffany_mountainCropRight.jpg);
 
         @include respond(tab-port) {
             width: 100%;
+            background-color: $color-primary-lesslight;  
+            
         }
-    }
+
+        & h2 {
+            background-image: linear-gradient(to right, #b2a07f, #6e5a35);
+        }
+    }  
 }
