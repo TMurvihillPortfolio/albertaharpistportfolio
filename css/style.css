@@ -492,14 +492,14 @@ body {
   font-family: inherit;
   color: inherit;
   padding: 1.5rem 2rem;
-  border-radius: 2px;
-  background-color: rbga(#fff, 0.5);
+  border-radius: 4px;
   border: none;
   border-bottom: 3px solid transparent;
   width: 90%;
   display: block;
-  transition: all .3s; }
-  @media only screen and (max-width: 56.25em) {
+  transition: all .3s;
+  border: 1px solid #6e5a35; }
+  @media only screen and (max-width: 37.5em) {
     .form__input {
       width: 100%; } }
   .form__input:focus {
@@ -1024,7 +1024,7 @@ body {
   margin-top: 8rem;
   padding: 5% 8%;
   background-image: linear-gradient(to bottom right, #6e5a35, #fff6e5); }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 37.5em) {
     .section-book {
       background-image: none;
       background-color: #333;
@@ -1042,6 +1042,10 @@ body {
       background-size: cover; } }
   @media only screen and (max-width: 56.25em) {
     .book {
+      background-image: linear-gradient(95deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, transparent 55%), url(../img/tiffany_mountainCropVeryRight.jpg);
+      background-size: cover; } }
+  @media only screen and (max-width: 37.5em) {
+    .book {
       background-image: none; } }
   .book__form {
     width: 50%;
@@ -1049,7 +1053,7 @@ body {
     @media only screen and (max-width: 75em) {
       .book__form {
         width: 65%; } }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 37.5em) {
       .book__form {
         width: 100%;
         background-color: #dbd5c9; } }
