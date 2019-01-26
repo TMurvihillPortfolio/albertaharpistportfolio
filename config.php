@@ -2,7 +2,7 @@
 
  //email info for contact form
  //$email = 'info@albertaharpist.com';
- $email = 'tmurv@shaw.ca';
+ $email = 'info@albertaharpist.com';
  $siteEmailRecipient = "Tiffany";
 
  //reCaptcha info for contact form

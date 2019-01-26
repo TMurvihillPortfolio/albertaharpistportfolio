@@ -1,4 +1,5 @@
-if (isset($_POST['submit'])) {
+<?php 
+    if (isset($_POST['submit'])) {
         $result = '';
         $inputEmail = '';
         $inputName = '';
@@ -70,3 +71,4 @@ if (isset($_POST['submit'])) {
             }
         }       
     }
+?>

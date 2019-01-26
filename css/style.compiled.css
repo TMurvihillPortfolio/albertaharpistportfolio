@@ -74,10 +74,10 @@ body {
   src: url("fonts/savoye.ttf"); }
 
 a {
-  color: #b3a17f;
+  color: #b2a07f;
   padding: .3rem;
   text-decoration: none;
-  border-bottom: 1px solid #b3a17f; }
+  border-bottom: 1px solid #b2a07f; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -90,7 +90,14 @@ body {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem;
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold; }
   .heading-primary--main {
     display: block;
     font-size: 6rem;
@@ -178,7 +185,7 @@ body {
   background-image: linear-gradient(to right bottom, rgba(255, 246, 229, 0.8), rgba(110, 90, 53, 0.8)), url(../img/HarpHands.jpg);
   background-position: center;
   padding: 5rem;
-  height: 70rem; }
+  height: fit-content; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -211,10 +218,10 @@ body {
     background-color: #fff; }
 
 .btn--green {
-  background-color: #b3a17f;
+  background-color: #b2a07f;
   color: #fff; }
   .btn--green::after {
-    background-color: #b3a17f; }
+    background-color: #b2a07f; }
 
 .btn::after {
   content: "";
@@ -234,15 +241,15 @@ body {
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
-  color: #b3a17f;
+  color: #b2a07f;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #b3a17f;
+  border-bottom: 1px solid #b2a07f;
   padding: 3px;
   transition: all .2s; }
 
 .btn-text:hover {
-  background-color: #b3a17f;
+  background-color: #b2a07f;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
@@ -375,9 +382,14 @@ body {
         font-size: 4rem; } }
 
 .composition {
-  position: relative; }
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: auto; }
   .composition__photo {
-    width: 35%;
+    width: 20em;
+    height: 25em;
+    margin: auto;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 24px;
     position: absolute;
@@ -386,38 +398,53 @@ body {
     outline-offset: 2rem; }
     @media only screen and (max-width: 56.25em) {
       .composition__photo {
+        margin-top: 5em;
+        height: 21em;
+        border-radius: 8px;
+        transform: scale(1.2);
         float: left;
         position: relative;
-        width: 33.33333333%;
         box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
     .composition__photo--p1 {
-      left: 8rem;
-      top: -2.5rem;
-      height: 29rem; }
+      left: -2em;
+      top: -2.5em;
+      height: 29em; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--p1 {
-          top: 0;
+          top: -5em;
+          left: 3em;
+          height: 21em;
+          width: 15em;
+          border-radius: 8px;
           transform: scale(1.2); } }
     .composition__photo--p2 {
-      left: 25rem;
-      top: 2rem;
-      height: 29rem; }
+      left: 14em;
+      top: 1em;
+      height: 29em; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--p2 {
-          top: -1rem;
-          transform: scale(1.3);
+          top: -2em;
+          left: 3.5em;
+          height: 21em;
+          width: 15em;
+          border-radius: 8px;
+          transform: scale(1.2);
           z-index: 100; } }
     .composition__photo--p3 {
-      left: 13rem;
-      top: 15rem;
-      height: 29rem; }
+      left: 5em;
+      top: 22em;
+      height: 29em; }
       @media only screen and (max-width: 56.25em) {
         .composition__photo--p3 {
-          top: 1rem;
-          left: 0;
-          transform: scale(1.1); } }
+          top: -10em;
+          left: 10em;
+          height: 21em;
+          width: 14em;
+          border-radius: 8px;
+          transform: scale(1.2);
+          z-index: 200; } }
     .composition__photo:hover {
-      outline: 1.5rem solid #b3a17f;
+      outline: 1.5rem solid #b2a07f;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
@@ -434,7 +461,9 @@ body {
   transition: transform .3s; }
   @media only screen and (max-width: 56.25em) {
     .feature-box {
-      padding: 2rem; } }
+      padding: 2rem;
+      width: 60%;
+      margin: auto; } }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
@@ -470,20 +499,20 @@ body {
   font-family: inherit;
   color: inherit;
   padding: 1.5rem 2rem;
-  border-radius: 2px;
-  background-color: rbga(#fff, 0.5);
+  border-radius: 4px;
   border: none;
   border-bottom: 3px solid transparent;
   width: 90%;
   display: block;
-  transition: all .3s; }
-  @media only screen and (max-width: 56.25em) {
+  transition: all .3s;
+  border: 1px solid #6e5a35; }
+  @media only screen and (max-width: 37.5em) {
     .form__input {
       width: 100%; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #b3a17f; }
+    border-bottom: 3px solid #b2a07f; }
   .form__input:focus:invalid {
     border-bottom: 3px solid #b3a106; }
   .form__input::-webkit-input-placeholder {
@@ -522,7 +551,7 @@ body {
 .form__radio-button {
   height: 3rem;
   width: 3rem;
-  border: 5px solid #b3a17f;
+  border: 5px solid #b2a07f;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
@@ -538,7 +567,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #b3a17f;
+    background-color: #b2a07f;
     opacity: 0;
     transition: opacity .2s; }
 
@@ -616,7 +645,7 @@ body {
     transition: all .2s;
     line-height: 1; }
   .popup__close:hover {
-    color: #b3a17f; }
+    color: #b2a07f; }
 
 .story {
   width: 75%;
@@ -631,8 +660,7 @@ body {
   @media only screen and (max-width: 56.25em) {
     .story {
       width: 100%;
-      padding: 4rem;
-      padding-left: 7rem; } }
+      padding: 2rem; } }
   @media only screen and (max-width: 37.5em) {
     .story {
       transform: skewX(0); } }
@@ -657,12 +685,20 @@ body {
   .story__text {
     margin: 5rem;
     transform: skewX(12deg); }
+    @media only screen and (max-width: 37.5em) {
+      .story__text {
+        margin: 1rem; } }
     .story__textp > span {
       font-style: italic;
       font-size: 72px; }
     @media only screen and (max-width: 37.5em) {
       .story__text {
         transform: skewX(0); } }
+    .story__text > p > span:nth-of-type(1),
+    .story__text > p > span:nth-of-type(2) {
+      font-family: 'alex brush', 'cursive';
+      font-size: 30px;
+      line-height: .3; }
 
 .weddingsContainer__text {
   padding: 25px;
@@ -670,6 +706,18 @@ body {
   padding-top: 100px;
   background-color: #dbd5c9;
   font-size: 18px; }
+  @media only screen and (max-width: 56.25em) {
+    .weddingsContainer__text {
+      font-size: 16px; } }
+  .weddingsContainer__text > p > span:nth-of-type(2),
+  .weddingsContainer__text > p > span:nth-of-type(3) {
+    font-family: 'alex brush', 'cursive';
+    font-size: 50px;
+    line-height: .8; }
+    @media only screen and (max-width: 56.25em) {
+      .weddingsContainer__text > p > span:nth-of-type(2),
+      .weddingsContainer__text > p > span:nth-of-type(3) {
+        font-size: 40px; } }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .weddingsContainer__text {
       -webkit-clip-path: polygon(0 0, 100% 12.5%, 100% 125%, 0 100%);
@@ -699,14 +747,16 @@ body {
   display: none;
   width: 70%;
   margin: auto;
-  overflow: hidden;
-  height: 400px; }
+  overflow: hidden; }
   .mySlides > img {
     margin-top: -50%; }
 
 .dotContainer {
   margin: 75px auto;
   text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .dotContainer {
+      margin: 20px auto 63px auto; } }
 
 /* Next & previous buttons */
 .prev, .next {
@@ -722,6 +772,9 @@ body {
   border-radius: 0 3px 3px 0;
   border-bottom: 0;
   user-select: none; }
+  @media only screen and (max-width: 37.5em) {
+    .prev, .next {
+      top: 30%; } }
 
 /* Position the "next button" to the right */
 .next {
@@ -732,16 +785,6 @@ body {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8); }
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center; }
 
 /* Number text (1/3 etc) */
 .numbertext {
@@ -810,7 +853,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .footer__navigation {
         width: 100%;
-        text-align: center; } }
+        text-align: center;
+        border: none;
+        padding-top: 0; } }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -825,7 +870,7 @@ body {
     display: inline-block;
     transition: all .2s; }
   .footer__link:hover, .footer__link:active {
-    color: #b3a17f;
+    color: #b2a07f;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transform: rotate(5deg) scale(1.3); }
   .footer__copyright {
@@ -836,7 +881,10 @@ body {
     @media only screen and (max-width: 56.25em) {
       .footer__copyright {
         width: 100%;
-        float: none; } }
+        float: none;
+        border: none;
+        text-align: center;
+        padding-top: 0; } }
 
 .row {
   max-width: 114rem;
@@ -846,10 +894,6 @@ body {
     @media only screen and (max-width: 56.25em) {
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
-  @media only screen and (max-width: 56.25em) {
-    .row {
-      max-width: 50rem;
-      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -892,39 +936,43 @@ body {
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
       background-image: linear-gradient(to right bottom, rgba(255, 246, 229, 0.8), rgba(110, 90, 53, 0.8)), url(../img/HarpHands.jpg); } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh); } }
-  .header__logo-box {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    padding: .5rem 1rem; }
-  .header__logo {
-    height: 3.5rem; }
   .header__text-box {
     position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    @media only screen and (max-width: 37.5em) {
+      .header__text-box {
+        top: 50%; } }
     .header__text-box--heading-secondary {
       font-family: "savoye", 'tangerine', sans-serif;
       font-weight: 400;
       font-size: 65px;
       color: white; }
+      @media only screen and (max-width: 37.5em) {
+        .header__text-box--heading-secondary {
+          font-size: 55px;
+          line-height: 1.3; } }
 
 .header__topLine {
   display: flex;
   justify-content: space-between; }
+  .header__topLine--logo-box {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    padding: .5rem 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .header__topLine--logo-box {
+        padding: 4rem .5rem; } }
   .header__topLine--logo {
     height: 9.5rem;
     opacity: .6; }
-    .header__topLine--logo-box {
-      position: absolute;
-      top: 2rem;
-      left: 3rem; }
   .header__topLine--navigation-list {
     display: flex;
     position: absolute;
@@ -953,7 +1001,10 @@ body {
   margin-top: -28vh; }
   @media only screen and (max-width: 56.25em) {
     .section-subLanding {
-      padding: 20rem 0; } }
+      padding: 30rem 0 3rem 0; } }
+  .section-subLanding__text {
+    margin-left: 4rem;
+    margin-right: 4rem; }
 
 .section-features {
   padding: 20rem 0;
@@ -965,6 +1016,7 @@ body {
     transform: skewY(-7deg); }
   @media only screen and (max-width: 56.25em) {
     .section-features {
+      margin-top: 0;
       padding: 10rem 0; } }
 
 .section-weddings {
@@ -980,15 +1032,17 @@ body {
   margin-bottom: 8rem; }
   @media only screen and (max-width: 56.25em) {
     .section-about {
-      padding: 10rem 0; } }
+      padding: 10rem 0 0; } }
 
 .section-book {
   margin-top: 8rem;
   padding: 5% 8%;
   background-image: linear-gradient(to bottom right, #6e5a35, #fff6e5); }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 37.5em) {
     .section-book {
-      padding: 10rem 0; } }
+      background-image: none;
+      background-color: #333;
+      padding: 0; } }
 
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/tiffany_mountainCropRight.jpg);
@@ -998,17 +1052,24 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
   @media only screen and (max-width: 75em) {
     .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/tiffany_mountainCropRight.jpg);
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/tiffany_mountainCropVeryRight.jpg);
       background-size: cover; } }
   @media only screen and (max-width: 56.25em) {
     .book {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/tiffany_mountainCropRight.jpg); } }
+      background-image: linear-gradient(95deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, transparent 55%), url(../img/tiffany_mountainCropVeryRight.jpg);
+      background-size: cover; } }
+  @media only screen and (max-width: 37.5em) {
+    .book {
+      background-image: none; } }
   .book__form {
     width: 50%;
     padding: 6rem; }
     @media only screen and (max-width: 75em) {
       .book__form {
         width: 65%; } }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 37.5em) {
       .book__form {
-        width: 100%; } }
+        width: 100%;
+        background-color: #dbd5c9; } }
+    .book__form h2 {
+      background-image: linear-gradient(to right, #b2a07f, #6e5a35); }

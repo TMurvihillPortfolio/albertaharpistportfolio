@@ -5,6 +5,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133302782-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-133302782-1');
+        </script>
+
         <meta name="description=" content="Professional Harpist Tiffany Hansen provides elegant, beautiful music for weddings, parties, funerals, or any special occasion.">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,12 +24,11 @@
         <link href="https://fonts.googleapis.com/css?family=Tangerine:100,300,400,700,900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Alex+Brush:100,300,400,700,900" rel="stylesheet">
 
-        <!--<link rel="stylesheet" href="css/icon-font.css">-->
+        <!--script.js located at bottom of body tag due to Safari failing to load slideshow-->
 
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        <script src="js/script.js"></script>
-        <title>Tiffany Hansen | Wedding Music | Harpist | Wedding Ceremony</title>
+        <title>Tiffany Hansen | Wedding Music | Calgary | Harpist | Ceremony Music | Background Music</title>
     </head>
 
     <body>
@@ -40,10 +49,10 @@
                 </div>
             </div>
             <div class="header__text-box">
-                <h1 class="heading-primary">
+                <p class="heading-primary">
                     <span class="heading-primary--main">Dreams</span>
                     <span class="heading-primary--sub">are where life happens</span>
-                </h1>
+                </p>
                 <h1 class="header__text-box--heading-secondary">Tiffany Hansen, harpist</h1>
             </div>
         </header>
@@ -135,83 +144,79 @@
                         More About Weddings
                     </h2>
                 </div>
-
-               <div class="weddingsContainer">
-
-                <div class="slideshow-container">
-                    <!-- Full-width images with number and caption text -->
-                    <div class="mySlides fade">
-                      <div class="numbertext">1 / 9</div>
-                      <img src="img/HarpSunlight.jpg" class="u-width-100" style="margin-top: 0;" alt="Harp in window with sunlight pouring in.">
-                      <!-- <div class="text">Caption Three</div> -->
-                    </div>
-                    <div class="mySlides fade">
-                      <div class="numbertext">2 / 9</div>
-                      <img src="img/tiffany_weddingBrushOutBag2.jpg" class="u-width-100" style="margin-top:0;" alt="Tiffany playing the harp at a wedding beside a lake with a mountain background.">
-                      <!-- <div class="text">Caption Text</div> -->
-                    </div>
-                    <div class="mySlides fade">
-                      <div class="numbertext">3 / 9</div>
-                      <img src="img/HarpYellow.jpg" class="u-width-100" style="margin-top: -13%;" alt="Tiffany playing the harp at an intimate chapel in Calgary.">
-                      <!-- <div class="text">Caption Three</div> -->
-                    </div>
-                    <div class="mySlides fade">
-                      <div class="numbertext">4 / 9</div>
-                      <img src="img/TiffAtLakeLouise.jpg" class="u-width-100" style="margin-top: -10%;" alt="Tiffany playing the harp at Lake Louise.">
-                      <!-- <div class="text">Caption Three</div> -->
-                    </div>
-                    <div class="mySlides fade">
-                      <div class="numbertext">5 / 9</div>
-                      <img src="img/HarpHands.jpg" class="u-width-100" alt="Closeup of two hands playing the harp.">
-                      <!-- <div class="text">Caption Two</div> -->
-                    </div>                 
-                    <div class="mySlides fade">
-                      <div class="numbertext">6 / 9</div>
-                      <img src="img/HarpBase.jpg" class="u-width-100" alt="Closeup of the base of a beautiful golden harp.">
-                      <!-- <div class="text">Caption Three</div> -->
-                    </div>
-                    <div class="mySlides fade">
-                      <div class="numbertext">7 / 9</div>
-                      <img src="img/tiffanyBrownTint.gif" class="u-width-100" style="margin-top: -27%;" alt="Tiffany playing the harp in a long gown.">
-                      <!-- <div class="text">Caption Three</div> -->
-                    </div>
-                    <div class="mySlides fade">
-                      <div class="numbertext">8 / 9</div>
-                      <img src="img/HarpAtLakeLouise.jpg" class="u-width-100" style="margin-top: -13%;" alt="Tiffany's harp with a Lake Louise background.">
-                      <!-- <div class="text">Caption Three</div> -->
-                    </div>           
-                    <div class="mySlides fade">
-                      <div class="numbertext">9 / 9</div>
-                      <img src="img/TiffSmiling.jpg" class="u-width-100" style="margin-top:-60%;" alt="Closeup of Tiffany at the harp with a big smile for the camera.">
-                      <!-- <div class="text">Caption Three</div> -->
-                    </div>                                    
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                  </div>
-                  <br>                 
-                  <!-- The dots/circles -->
-                  <div class = "dotContainer">
-                    <span class="dot" onclick="currentSlide(1)"></span> 
-                    <span class="dot" onclick="currentSlide(2)"></span> 
-                    <span class="dot" onclick="currentSlide(3)"></span> 
-                    <span class="dot" onclick="currentSlide(4)"></span> 
-                    <span class="dot" onclick="currentSlide(5)"></span> 
-                    <span class="dot" onclick="currentSlide(6)"></span> 
-                    <span class="dot" onclick="currentSlide(7)"></span> 
-                    <span class="dot" onclick="currentSlide(8)"></span> 
-                    <span class="dot" onclick="currentSlide(9)"></span> 
-                  </div>
-
-                   <div class="weddingsContainer__text">
-                        <h3 class="heading-tertiary">Make your wedding extraordinary</h3>
-                        <p><span>From Confetti Magazine (Fall/Winter 2018)  --  </span><br>
-                            <span>&ldquo;</span>&nbsp;&nbsp;&nbsp;When choosing music for your ceremony, hiring a live musician is infinitely more elegant than using a sound system. Professional musicians are trained to adapt to any situation, such as inconsistencies in the timing of your procession. They also add a tasteful pause for your officiant to say 'Please rise,' just before you and your betrothed make your way down the aisle. They can also incorporate other cues into your procession at your request.<span>&rdquo;</span><br><br> Tiffany offers a free consultation and will customize all of the music to your musical tastes.</p>
-                        <div class="u-center-text u-margin-top">
-                            <a href="#contact" class="btn btn--green">Contact Tiffany</a>
+                <div class="weddingsContainer">
+                    <div class="slideshow-container">
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                        <div class="numbertext">1 / 9</div>
+                        <img src="img/HarpSunlight.jpg" class="u-width-100" style="margin-top: 0;" alt="Harp in window with sunlight pouring in.">
+                        <!-- <div class="text">Caption Three</div> -->
                         </div>
-                   </div>
-               </div>               
+                        <div class="mySlides fade">
+                        <div class="numbertext">2 / 9</div>
+                        <img src="img/tiffany_weddingBrushOutBag2.jpg" class="u-width-100" style="margin-top:0;" alt="Tiffany playing the harp at a wedding beside a lake with a mountain background.">
+                        <!-- <div class="text">Caption Text</div> -->
+                        </div>
+                        <div class="mySlides fade">
+                        <div class="numbertext">3 / 9</div>
+                        <img src="img/HarpYellow.jpg" class="u-width-100" style="margin-top: -13%;" alt="Tiffany playing the harp at an intimate chapel in Calgary.">
+                        <!-- <div class="text">Caption Three</div> -->
+                        </div>
+                        <div class="mySlides fade">
+                        <div class="numbertext">4 / 9</div>
+                        <img src="img/TiffAtLakeLouise.jpg" class="u-width-100" style="margin-top: -10%;" alt="Tiffany playing the harp at Lake Louise.">
+                        <!-- <div class="text">Caption Three</div> -->
+                        </div>
+                        <div class="mySlides fade">
+                        <div class="numbertext">5 / 9</div>
+                        <img src="img/HarpHands.jpg" class="u-width-100" alt="Closeup of two hands playing the harp.">
+                        <!-- <div class="text">Caption Two</div> -->
+                        </div>                 
+                        <div class="mySlides fade">
+                        <div class="numbertext">6 / 9</div>
+                        <img src="img/HarpBase.jpg" class="u-width-100" alt="Closeup of the base of a beautiful golden harp.">
+                        <!-- <div class="text">Caption Three</div> -->
+                        </div>
+                        <div class="mySlides fade">
+                        <div class="numbertext">7 / 9</div>
+                        <img src="img/tiffanyBrownTint.gif" class="u-width-100" style="margin-top: -27%;" alt="Tiffany playing the harp in a long gown.">
+                        <!-- <div class="text">Caption Three</div> -->
+                        </div>
+                        <div class="mySlides fade">
+                        <div class="numbertext">8 / 9</div>
+                        <img src="img/HarpAtLakeLouise.jpg" class="u-width-100" style="margin-top: -13%;" alt="Tiffany's harp with a Lake Louise background.">
+                        <!-- <div class="text">Caption Three</div> -->
+                        </div>           
+                        <div class="mySlides fade">
+                        <div class="numbertext">9 / 9</div>
+                        <img src="img/TiffSmiling.jpg" class="u-width-100" style="margin-top:-60%;" alt="Closeup of Tiffany at the harp with a big smile for the camera.">
+                        <!-- <div class="text">Caption Three</div> -->
+                        </div>                                    
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>                 
+                    <div class = "dotContainer">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                        <span class="dot" onclick="currentSlide(4)"></span> 
+                        <span class="dot" onclick="currentSlide(5)"></span> 
+                        <span class="dot" onclick="currentSlide(6)"></span> 
+                        <span class="dot" onclick="currentSlide(7)"></span> 
+                        <span class="dot" onclick="currentSlide(8)"></span> 
+                        <span class="dot" onclick="currentSlide(9)"></span> 
+                    </div>
+                    <div class="weddingsContainer__text">
+                            <h3 class="heading-tertiary">Make your wedding extraordinary</h3>
+                            <p><span>From Confetti Magazine (Fall/Winter 2018)  --  </span><br>
+                                <span>&ldquo;</span>&nbsp;&nbsp;&nbsp;When choosing music for your ceremony, hiring a live musician is infinitely more elegant than using a sound system. Professional musicians are trained to adapt to any situation, such as inconsistencies in the timing of your procession. They also add a tasteful pause for your officiant to say 'Please rise,' just before you and your betrothed make your way down the aisle. They can also incorporate other cues into your procession at your request.<span>&rdquo;</span><br><br> Tiffany offers a free consultation and will customize all of the music to your musical tastes.</p>
+                            <div class="u-center-text u-margin-top">
+                                <a href="#contact" class="btn btn--green">Contact Tiffany</a>
+                            </div>
+                    </div>
+                </div>               
             </section>
 
             <section class="section-about" id="about">               
@@ -303,5 +308,6 @@
                 </div>
             </div>
         </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>

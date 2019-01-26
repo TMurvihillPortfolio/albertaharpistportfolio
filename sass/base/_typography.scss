@@ -24,6 +24,15 @@ body {
     backface-visibility: hidden;
     margin-bottom: 6rem;
 
+    //from h1 class because h1 tag removed from "dreams" quote for the sake of SEO. 
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+
     &--main {
         display: block;
         font-size: 6rem;
