@@ -3,8 +3,6 @@
         margin-bottom: 2rem;
         margin-top: -2.5rem;
         &>p {
-            
-
             font-size: 18px;
             &>span {
                 font-size: 24px;
@@ -121,3 +119,14 @@
         opacity: 1;
     }
 }
+
+.grecaptcha-badge:parent {
+
+    transition: all 3s;
+    
+    }
+.grecaptcha-badge {
+
+    transform: translateX(200%);
+    
+    }

@@ -574,6 +574,12 @@ body {
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
   opacity: 1; }
 
+.grecaptcha-badge:parent {
+  transition: all 3s; }
+
+.grecaptcha-badge {
+  transform: translateX(200%); }
+
 .popup {
   height: 100vh;
   width: 100%;

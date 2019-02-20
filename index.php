@@ -14,6 +14,18 @@
 
             gtag('config', 'UA-133302782-1');
         </script>
+        <!-- Google reCaptcha -->
+        <script src="https://www.google.com/recaptcha/api.js?render=6LdrkJIUAAAAAItgLonuFmpJSDOnofRZqEaamBni"></script>
+        <script>
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6LdrkJIUAAAAAItgLonuFmpJSDOnofRZqEaamBni', {action: 'homepage'}).then(function(token) {
+                    // pass the token to the backend script for verification
+
+                    // add token value to form for PHP verification
+                    document.getElementById('g-recaptcha-response').value = token;
+                });
+            });
+        </script>
 
         <meta name="description=" content="Professional Harpist Tiffany Hansen provides elegant, beautiful music for weddings, parties, funerals, or any special occasion.">
         <meta charset="UTF-8">
@@ -275,6 +287,10 @@
                                 <label for="message" class="form__label">Optional Message</label>
                                 <textarea rows='4' name="message" class="form__input" id="message"></textarea>
                             </div>
+                            <!-- reCaptcha fields -->
+                            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+                            <input type="hidden" name="action" value="validate_captcha">
+                        
                             <div class="form__group">
                                 <button class="btn btn--green" type='submit' name='submit'>Send &rarr;</button>
                             </div>
@@ -308,6 +324,6 @@
                 </div>
             </div>
         </footer>
-        <script src="js/script.js"></script>
+        <script src="js/script.js?version=1.001"></script>
     </body>
 </html>
