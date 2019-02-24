@@ -19,7 +19,7 @@
                 // Make and decode POST request: $recaptchaSecretKey from config.php file
                 $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptchaSecretKey . '&response=' . $recaptcha_response);
                 $recaptcha = json_decode($recaptcha);
-                $recaptcha->score = .03;
+                
                 // Take action based on the score returned:
                 if (isset($recaptcha->score) && $recaptcha->score >= 0.5) {
                     // Verified - send email
