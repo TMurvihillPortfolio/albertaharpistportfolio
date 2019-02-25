@@ -182,7 +182,7 @@ body {
   width: 100%; }
 
 .aboutContainer {
-  background-image: linear-gradient(to right bottom, rgba(255, 246, 229, 0.8), rgba(110, 90, 53, 0.8)), url(../img/HarpHands.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 246, 229, 0.8), rgba(110, 90, 53, 0.8)), url(https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1550592300/HarpHands.jpg);
   background-position: center;
   padding: 5rem;
   height: fit-content; }
@@ -257,129 +257,6 @@ body {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
-
-.card {
-  perspective: 150rem;
-  -moz-perspective: 150rem;
-  position: relative;
-  height: 52rem; }
-  .card__side {
-    height: 52rem;
-    transition: all .8s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 3px;
-    overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-    .card__side--front {
-      background-color: #fff; }
-    .card__side--back {
-      transform: rotateY(180deg); }
-      .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #f1de0a, #b3a106); }
-      .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #fff6e5, #6e5a35); }
-      .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #19ebba, #0da17f); }
-  .card:hover .card__side--front {
-    transform: rotateY(-180deg); }
-  .card:hover .card__side--back {
-    transform: rotateY(0); }
-  .card__picture {
-    background-size: cover;
-    height: 23rem;
-    background-blend-mode: screen;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px; }
-    .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #f1de0a, #b3a106), url(../img/nat-5.jpg); }
-    .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #fff6e5, #6e5a35), url(../img/nat-6.jpg); }
-    .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #19ebba, #0da17f), url(../img/nat-7.jpg); }
-  .card__heading {
-    font-size: 2.8rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    text-align: right;
-    color: #fff;
-    position: absolute;
-    top: 12rem;
-    right: 2rem;
-    width: 75%; }
-  .card__heading-span {
-    padding: 1rem 1.5rem;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone; }
-    .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(241, 222, 10, 0.85), rgba(179, 161, 6, 0.85)); }
-    .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(255, 246, 229, 0.85), rgba(110, 90, 53, 0.85)); }
-    .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(25, 235, 186, 0.85), rgba(13, 161, 127, 0.85)); }
-  .card__details {
-    padding: 3rem; }
-    .card__details ul {
-      list-style: none;
-      width: 80%;
-      margin: 0 auto; }
-      .card__details ul li {
-        text-align: center;
-        font-size: 1.5rem;
-        padding: 1rem; }
-        .card__details ul li:not(:last-child) {
-          border-bottom: 1px solid #eee; }
-  .card__cta {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    text-align: center; }
-  .card__price-box {
-    text-align: center;
-    color: #fff;
-    margin-bottom: 8rem; }
-  .card__price-only {
-    font-size: 1.4rem;
-    text-transform: uppercase; }
-  .card__price-value {
-    font-size: 6rem;
-    font-weight: 100; }
-  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-    .card {
-      height: auto;
-      border-radius: 3px;
-      background-color: #fff;
-      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-      .card__side {
-        height: auto;
-        position: relative;
-        box-shadow: none; }
-        .card__side--back {
-          transform: rotateY(0);
-          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); }
-      .card:hover .card__side--front {
-        transform: rotateY(0); }
-      .card__details {
-        padding: 1rem 3rem; }
-      .card__cta {
-        position: relative;
-        top: 0%;
-        left: 0;
-        transform: translate(0);
-        width: 100%;
-        padding: 7rem 4rem 4rem 4rem; }
-      .card__price-box {
-        margin-bottom: 3rem; }
-      .card__price-value {
-        font-size: 4rem; } }
 
 .composition {
   position: relative;
@@ -930,7 +807,7 @@ body {
 
 .header {
   height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(255, 246, 229, 0), rgba(110, 90, 53, 0.7)), url(../img/HarpHands.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 246, 229, 0), rgba(110, 90, 53, 0.7)), url(https://res.cloudinary.com/take2tech-ca/image/upload/v1550592300/HarpHands.jpg);
   background-size: cover;
   background-position: bottom;
   position: relative; }
@@ -941,7 +818,7 @@ body {
       height: 95vh; } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(255, 246, 229, 0.8), rgba(110, 90, 53, 0.8)), url(../img/HarpHands.jpg); } }
+      background-image: linear-gradient(to right bottom, rgba(255, 246, 229, 0.8), rgba(110, 90, 53, 0.8)), url(https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1550592300/HarpHands.jpg); } }
   @media only screen and (max-width: 56.25em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -1014,7 +891,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(255, 246, 229, 0.8), rgba(110, 90, 53, 0.8)), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 246, 229, 0.8), rgba(110, 90, 53, 0.8)), url(https://res.cloudinary.com/take2tech-ca/image/upload/f_webp,fl_awebp.lossy,q_auto/v1551052482/nat-4.jpg);
   background-size: cover;
   transform: skewY(7deg);
   margin-top: -10rem; }
@@ -1051,18 +928,18 @@ body {
       padding: 0; } }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/tiffany_mountainCropRight.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1551052366/tiffany_mountainCropRight.jpg);
   background-size: 100%;
   border-radius: 3px;
   background-position: center right;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
   @media only screen and (max-width: 75em) {
     .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/tiffany_mountainCropVeryRight.jpg);
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1551052368/tiffany_mountainCropVeryRight.jpg);
       background-size: cover; } }
   @media only screen and (max-width: 56.25em) {
     .book {
-      background-image: linear-gradient(95deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, transparent 55%), url(../img/tiffany_mountainCropVeryRight.jpg);
+      background-image: linear-gradient(95deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, transparent 55%), url(https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1551052368/tiffany_mountainCropVeryRight.jpg);
       background-size: cover; } }
   @media only screen and (max-width: 37.5em) {
     .book {

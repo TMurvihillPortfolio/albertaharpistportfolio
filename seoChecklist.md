@@ -20,7 +20,7 @@
 ### GOOGLE ANALYTICS
 
 To view analytics
-http://www.google.com/analytics
+https://www.google.com/analytics
 
 Hansentake2tech@google.ca
 Password: 47Strings

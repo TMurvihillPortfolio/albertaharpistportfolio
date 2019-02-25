@@ -39,7 +39,7 @@
         <!--script.js located at bottom of body tag due to Safari failing to load slideshow-->
 
         <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1551052385/musiclogonobacktancolor1.png">
         <title>Tiffany Hansen | Wedding Music | Calgary | Harpist | Ceremony Music | Background Music</title>
     </head>
 
@@ -47,7 +47,7 @@
         <header class="header">
             <div class="header__topLine">
                 <div class="header__topLine--logo-box">
-                    <img src="img/musiclogonobacktancolor1.png" alt="Logo made up of music symbols" class="header__topLine--logo">
+                    <img src="https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1551052385/musiclogonobacktancolor1.png" alt="Logo made up of music symbols" class="header__topLine--logo">
                 </div>
                 <div class="navigation">                 
                     <nav class="header__topLine--navigation">
@@ -96,15 +96,15 @@
                         <div class="composition"> 
                             <img alt="The base of a beautiful gold harp."
                                  class="composition__photo composition__photo--p1"
-                                 src="img/HarpBase.jpg">
+                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1551052405/HarpBase.jpg">
 
                             <img alt="Closeup of hands playing the harp."
                                  class="composition__photo composition__photo--p2"
-                                 src="img/HarpHands.jpg">
+                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1550592300/HarpHands.jpg">
 
                             <img alt="Tiffany playing the harp in a long gown."
                                  class="composition__photo composition__photo--p3"
-                                 src="img/tiffany.jpg">
+                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1551052426/tiffany.jpg">
                         </div>
                     </div>
                 </div>
@@ -161,47 +161,47 @@
                         <!-- Full-width images with number and caption text -->
                         <div class="mySlides fade">
                         <div class="numbertext">1 / 9</div>
-                        <img src="img/HarpSunlight.jpg" class="u-width-100" style="margin-top: 0;" alt="Harp in window with sunlight pouring in.">
+                        <img src="https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1551051538/HarpSunlight.jpg" class="u-width-100" style="margin-top: 0;" alt="Harp in window with sunlight pouring in.">
                         <!-- <div class="text">Caption Three</div> -->
                         </div>
                         <div class="mySlides fade">
                         <div class="numbertext">2 / 9</div>
-                        <img src="img/tiffany_weddingBrushOutBag2.jpg" class="u-width-100" style="margin-top:0;" alt="Tiffany playing the harp at a wedding beside a lake with a mountain background.">
+                        <img src="https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1551052353/tiffany_weddingBrushOutBag2.jpg" class="u-width-100" style="margin-top:0;" alt="Tiffany playing the harp at a wedding beside a lake with a mountain background.">
                         <!-- <div class="text">Caption Text</div> -->
                         </div>
                         <div class="mySlides fade">
                         <div class="numbertext">3 / 9</div>
-                        <img src="img/HarpYellow.jpg" class="u-width-100" style="margin-top: -13%;" alt="Tiffany playing the harp at an intimate chapel in Calgary.">
+                        <img src="https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp/v1550592922/HarpYellow.jpg" class="u-width-100" style="margin-top: -13%;" alt="Tiffany playing the harp at an intimate chapel in Calgary.">
                         <!-- <div class="text">Caption Three</div> -->
                         </div>
                         <div class="mySlides fade">
                         <div class="numbertext">4 / 9</div>
-                        <img src="img/TiffAtLakeLouise.jpg" class="u-width-100" style="margin-top: -10%;" alt="Tiffany playing the harp at Lake Louise.">
+                        <img src="https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_auto,fl_lossy/v1551113200/TiffAtLakeLouise.jpg" class="u-width-100" style="margin-top: -10%;" alt="Tiffany playing the harp at Lake Louise.">
                         <!-- <div class="text">Caption Three</div> -->
                         </div>
                         <div class="mySlides fade">
                         <div class="numbertext">5 / 9</div>
-                        <img src="img/HarpHands.jpg" class="u-width-100" alt="Closeup of two hands playing the harp.">
+                        <img src="https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1550592300/HarpHands.jpg" class="u-width-100" alt="Closeup of two hands playing the harp.">
                         <!-- <div class="text">Caption Two</div> -->
                         </div>                 
                         <div class="mySlides fade">
                         <div class="numbertext">6 / 9</div>
-                        <img src="img/HarpBase.jpg" class="u-width-100" alt="Closeup of the base of a beautiful golden harp.">
+                        <img src="https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1551052405/HarpBase.jpg" class="u-width-100" alt="Closeup of the base of a beautiful golden harp.">
                         <!-- <div class="text">Caption Three</div> -->
                         </div>
                         <div class="mySlides fade">
                         <div class="numbertext">7 / 9</div>
-                        <img src="img/tiffanyBrownTint.gif" class="u-width-100" style="margin-top: -27%;" alt="Tiffany playing the harp in a long gown.">
+                        <img src="https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1551052416/tiffanyBrownTint.gif" class="u-width-100" style="margin-top: -27%;" alt="Tiffany playing the harp in a long gown.">
                         <!-- <div class="text">Caption Three</div> -->
                         </div>
                         <div class="mySlides fade">
                         <div class="numbertext">8 / 9</div>
-                        <img src="img/HarpAtLakeLouise.jpg" class="u-width-100" style="margin-top: -13%;" alt="Tiffany's harp with a Lake Louise background.">
+                        <img src="https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1551051563/HarpAtLakeLouise.jpg" class="u-width-100" style="margin-top: -13%;" alt="Tiffany's harp with a Lake Louise background.">
                         <!-- <div class="text">Caption Three</div> -->
                         </div>           
                         <div class="mySlides fade">
                         <div class="numbertext">9 / 9</div>
-                        <img src="img/TiffSmiling.jpg" class="u-width-100" style="margin-top:-60%;" alt="Closeup of Tiffany at the harp with a big smile for the camera.">
+                        <img src="https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1551052451/TiffSmiling.jpg" class="u-width-100" style="margin-top:-60%;" alt="Closeup of Tiffany at the harp with a big smile for the camera.">
                         <!-- <div class="text">Caption Three</div> -->
                         </div>                                    
                         <!-- Next and previous buttons -->
@@ -304,7 +304,7 @@
         <footer class="footer">
             <div class="footer__logo-box">
                 <picture class="footer__logo">
-                    <img alt="Full logo" src="img/logo.png">
+                    <img alt="Logo-Tiffany Hansen's name in a pretty font." src="https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1551052457/logo.png">
                 </picture>               
             </div>
             <div class="row">
