@@ -1,4 +1,4 @@
-<?php
+<?php session_start();  
     include 'config.php';
     include 'contactMailer.php';  
 ?>
@@ -260,10 +260,10 @@
             <div class="row">
                 <div class="book">
                     <div class="book__form">
-                        <form action="index.php#section-book" class="form" name="submit" method='post'>
+                        <form action="index.php#contact" class="form" name="submit" method='post'>
                             <div class="u-margin-bottom-medium">
                                 <h2 class="heading-secondary">
-                                    <?php if(isset($result)&&(!$result=='')) {echo $result.'<br>'; unset($result);} else {echo 'Contact Tiffany';} ?>                                    
+                                    <?php if(isset($_SESSION['result'])&&(!$_SESSION['result']=='')) {echo $_SESSION['result'].'<br>'; unset($_SESSION['result']);} else {echo 'Contact Tiffany';} ?>                                    
                                 </h2>
                             </div>  
                             <div class="form__text">

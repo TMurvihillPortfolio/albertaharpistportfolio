@@ -13,5 +13,5 @@
         // curl_close($curl);
       
         // if (isset($response->success) && !$response->success == true) {
-        //     $result = 'ReCaptcha validation failed.';
+        //     $_SESSION['result'] = 'ReCaptcha validation failed.';
         // }
