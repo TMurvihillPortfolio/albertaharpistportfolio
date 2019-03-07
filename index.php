@@ -86,7 +86,7 @@
 
                         <h3 class="heading-tertiary u-margin-bottom-small">What style of music is on your playlist?</h3>
                         <p class="paragraph">
-                            From Bach to Beyonce, any piece sounds beautiful on the harp! Please feel free to <a href="contact">contact Tiffany</a> for more information, to schedule a free consultation, or to book an event. 
+                            From Bach to Beyonce, any piece sounds beautiful on the harp! Please feel free to <a href="#contact">contact Tiffany</a> for more information, to schedule a free consultation, or to book an event. 
                         </p>
                         <div class="u-center-text u-margin-top-big u-margin-bottom-big">
                             <a href="#weddings" class="btn btn--green">More About Weddings</a>
@@ -242,7 +242,7 @@
                                     </h2>
                                 </div> 
                                 <p>
-                                        Tiffany has been one of the top free-lance harpists in the Calgary area for many years. Her musical pursuits have taken her to many places throughout Canada and the United States. She is Principal Harpist Emeritus of the <a href="https://calgarycivicsymphony.ca">Calgary Civic Symphony</a>. One of her greatest enjoyments in playing such an elegant instrument is being able to provide a unique and memorable musical experience for weddings and special events. <br><br>
+                                        Tiffany has been one of the top free-lance harpists in the Calgary area for many years. Her musical pursuits have taken her to many places throughout Canada and the United States. She is Principal Harpist Emeritus of the <a href="https://calgarycivicsymphony.ca" target="_blank">Calgary Civic Symphony</a>. One of her greatest enjoyments in playing such an elegant instrument is being able to provide a unique and memorable musical experience for weddings and special events. <br><br>
                                     <span>&ldquo;</span>&nbsp;Tiffany is an amazing musician and a wonderful harpist. I would highly recommend her for any occasion.&nbsp;&nbsp;<span>&rdquo;</span>&nbsp;&nbsp;&nbsp;--Tisha Murvihill
                                 </p>
                             </div>
@@ -311,9 +311,9 @@
                 <div class="col-1-of-2">
                     <div class="footer__navigation">
                         <ul class="footer__list">
-                            <li class="footer__item"><a href="#section-about" class="footer__link">About Tiffany</a></li>
-                            <li class="footer__item"><a href="#section-weddings" class="footer__link">Weddings</a></li>
-                            <li class="footer__item"><a href="#section-book" class="footer__link">Contact</a></li>
+                            <li class="footer__item"><a href="#about" class="footer__link">About Tiffany</a></li>
+                            <li class="footer__item"><a href="#weddings" class="footer__link">Weddings</a></li>
+                            <li class="footer__item"><a href="#contact" class="footer__link">Contact</a></li>
                         </ul>
                     </div>
                 </div>

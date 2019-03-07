@@ -1,79 +1,77 @@
 <?php session_start();
     include 'config.php';
+    
     if (isset($_POST['submit'])) {
+        // Initiate variables
+        $_SESSION['result'] = '';
         $inputEmail = '';
         $inputName = '';
         $inputMessage = '';
         $inputPhone = '';
+        
+        //prepare and send reCaptcha verification
+        $recaptchaArray = [
+            'secret' => $recaptchaSecretKeyv2,
+            'response' => $_POST['g-recaptcha-response']
+        ];
+        $curl = curl_init();
+        curl_setopt($curl, CURLOPT_URL, 'https://www.google.com/recaptcha/api/siteverify');
+        curl_setopt($curl, CURLOPT_POST, true);
+        curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($recaptchaArray));
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        $response = json_decode(curl_exec($curl));
+        curl_close($curl);
+        
+        // Check for reCaptcha success
+        if (isset($response->success) && !$response->success == true) {
+            $_SESSION['result'] = 'ReCaptcha validation failed.';
+        }
+        if (isset($_SESSION['result']) && !$_SESSION['result'] == 'ReCaptcha validation failed.') { // Recaptcha successful
+            // get post variables
+            if (isset($_POST['name'])) {
+                $inputName = $_POST['name'];
+            }
+            if (isset($_POST['email'])) {
+                $inputEmail = $_POST['email'];
+            }
+            if (isset($_POST['phone'])) {
+                $inputPhone = $_POST['phone'];
+            }
+            if (isset($_POST['message'])) {
+                $inputMessage = $_POST['message'];
+            }
 
-        if (isset($_POST['submit'])) {
-    
-            if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['g-recaptcha-response'])) {
-                
-                // Build POST request:
-                $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-                $recaptchaSecretKey = "6LdrkJIUAAAAAMfuPB0mkRBec5fj2H2I3RlXtXku";
-                $recaptcha_response = $_POST['g-recaptcha-response'];
-            
-                // Make and decode POST request: $recaptchaSecretKey from config.php file
-                $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptchaSecretKey . '&response=' . $recaptcha_response);
-                $recaptcha = json_decode($recaptcha);
+            //prepare email
+            $subject = "Message from albertaharpist.com contact form";
+            $headers = "From: albertaharpist.com" . "\r\n";
+            $headers .= "MIME-Version: 1.0" . "\r\n";
+            $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-                // Take action based on the score returned:
-                if (isset($recaptcha->score) && $recaptcha->score >= 0.5) {
-                    // Verified - send email
-                    
-                    if(isset($_POST['name'])) {
-                        $inputName = $_POST['name'];
-                    }
-                    if(isset($_POST['email'])) {
-                        $inputEmail = $_POST['email'];
-                    }
-                    if(isset($_POST['phone'])) {
-                        $inputPhone = $_POST['phone'];
-                    }
-                    if(isset($_POST['message'])) {
-                        $inputMessage = $_POST['message'];
-                    }
-                    
-                    // $inputPhone = $_POST['phone'];
-                    // $inputMessage = $_POST['message'];
-            
-                    $mail_body = '<html>
-                    <body style="font-family: Arial, Helvetica, sans-serif;
-                                        line-height:1.8em;">
-                    <p>Hello '.$siteEmailRecipient.', <br><br> A message with the following information was sent via the contact form on the albertaharpist.com website:</p>
+            $mail_body = '
+                <html>
+                <body style="font-family: Arial, Helvetica, sans-serif;
+                                    line-height:1.8em;">
+                    <p>Hello '.$siteEmailRecipient.', <br> A message with the following information was sent via the contact form on the albertaharpist.com website:</p>
                     <p>Name: '.$inputName.'<br>
                     Email: '.$inputEmail.'<br>
                     Phone: '.$inputPhone.'<br>
-                    Message: '.$inputMessage.'<br>         
+                    Message: '.$inputMessage.'<br>
                     <br>
                     Have a nice day!<br>
-                    <a href="https://albertaharpist.com">albertaharpist.com</a>
+                    albertaharpist.com
                     </p>
-                    </body>
-                    </html>';
-                
-                    $subject = "Message from albertaharpist.com contact form";
-                    $headers = "From: albertaharpist.com" . "\r\n";
-                    $headers .= "MIME-Version: 1.0" . "\r\n";
-                    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-                    
-                    //Error Handling for PHPMailer
-                    if(!mail($email, $subject, $mail_body, $headers)){
-                        $_SESSION['result'] = "Email failed to send.";
-                        unset($_POST);
-                    }
-                    else{
-                        $_SESSION['result'] = "Email sent!";
-                        unset($_POST);                      
-                        header('Location: index.php#contact');
-                        exit();
-                    }                          
-                } else {
-                    // Not verified - show form error
-                    $_SESSION['result'] = "Hmmm... Spam Bot verification failed. Please send and email to info@albertaharpist.com.";
-                }      
+                </body>
+                </html>
+            ';
+
+            //Send email
+            if(!mail($email, $subject, $mail_body, $headers)){
+                $_SESSION['result'] = "Email failed to send.";
+            }
+            else{
+                $_SESSION['result'] = "Email sent!";
+                header('Location: index.php#contact');
+                exit();
             }
         }       
     }
@@ -87,21 +85,11 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'UA-133302782-1');
     </script>
-    <!-- Google reCaptcha -->
-    <script src="https://www.google.com/recaptcha/api.js?render=6LdrkJIUAAAAAItgLonuFmpJSDOnofRZqEaamBni"></script>
-    <script>
-        grecaptcha.ready(function() {
-            grecaptcha.execute('6LdrkJIUAAAAAItgLonuFmpJSDOnofRZqEaamBni', {action: 'homepage'}).then(function(token) {
-                // pass the token to the backend script for verification
 
-                // add token value to form for PHP verification
-                document.getElementById('g-recaptcha-response').value = token;
-            });
-        });
-    </script>
+    <!-- Google reCaptcha -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <meta name="description=" content="Professional Harpist Tiffany Hansen provides elegant, beautiful music for weddings, parties, funerals, or any special occasion.">
     <meta charset="UTF-8">
@@ -136,11 +124,9 @@
                             <label for="name" class="form__label">Full name</label>
                             <input type="text" name="name" class="form__input" id="name" value="<?php echo $_SESSION['name']; ?>" required>                           
                         </div>
-
                         <div class="form__group">
                             <label for="email" class="form__label">Email address</label>
                             <input type="email" name="email" class="form__input" id="email" value="<?php echo $_SESSION['email']; ?>" required>
-                            
                         </div>
                         <div class="form__group">
                             <label for="phone" class="form__label">Optional Phone</label>
@@ -151,8 +137,8 @@
                             <textarea rows='4' name="message" class="form__input" id="message"><?php echo $_SESSION['message']; ?></textarea>
                         </div>
                         <!-- reCaptcha fields -->
-                        <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-                        <input type="hidden" name="action" value="validate_captcha">
+                        <div class="g-recaptcha" data-sitekey="6LfvPJYUAAAAAETNBCYsJeUfj2VWtJaDrSL-RR0A"></div>
+                        <!-- end reCaptcha fields -->
                     
                         <div class="form__group">
                             <button class="btn btn--green" type='submit' name='submit'>Send &rarr;</button>

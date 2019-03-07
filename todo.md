@@ -1,7 +1,7 @@
 # TODO
 
 ### IN THE MIDST
-- Trying to get session variables to work on contacts
+
 
 ### GENERAL TODO
 1. style "dreams are where life happens" without a heading tag (SEO)
