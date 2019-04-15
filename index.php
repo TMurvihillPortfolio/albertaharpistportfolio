@@ -56,8 +56,7 @@
                             <li class="header__topLine--navigation-item"><a href="#weddings" class="header__topLine--navigation-link">Weddings</a></li>
                             <li class="header__topLine--navigation-item"><a href="#contact" class="header__topLine--navigation-link">Contact</a></li>
                         </ul>
-                    </nav>
-                    
+                    </nav>                   
                 </div>
             </div>
             <div class="header__text-box">
@@ -319,7 +318,7 @@
                 </div>
                 <div class="col-1-of-2">
                     <p class="footer__copyright">
-                        Website built by <a href="https://take2tech.ca">take2tech.ca</a>. &nbsp;Design ideas courtesy of Jonas Schmedtmann. Used with permission.
+                        Website built by <a href="https://take2tech.ca">take2tech.ca</a>. &nbsp;Some design ideas courtesy of Jonas Schmedtmann. Used with permission.
                     </p> 
                 </div>
             </div>

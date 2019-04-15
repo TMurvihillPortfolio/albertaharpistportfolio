@@ -5,8 +5,8 @@
         sleep(3);
     }
     //email info for contact form
-    $email = 'tmurv@shaw.ca'; //for testing
-    //$email = 'info@albertaharpist.com';
+    //$email = 'tmurv@shaw.ca'; //for testing
+    $email = 'info@albertaharpist.com';
     $siteEmailRecipient = "Tiffany";
 
     //reCaptcha ver. 2 info for contact form
