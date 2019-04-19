@@ -34,10 +34,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 document.addEventListener("scroll", event => { 
     const captchaBadge = document.querySelector('.grecaptcha-badge');
-    if (window.scrollY>4300 && window.scrollY<4850) {
-      captchaBadge.style.webkitTransform = "translateX(0)";
-    }else{
-      captchaBadge.style.webkitTransform = "translateX(200%)";
-    }
+    if (captchaBadge) {
+      if (window.scrollY>3800 && window.scrollY<4850) {
+        captchaBadge.style.webkitTransform = "translateX(0)";
+      }else{
+        captchaBadge.style.webkitTransform = "translateX(200%)";
+      }
+    }   
 });
 

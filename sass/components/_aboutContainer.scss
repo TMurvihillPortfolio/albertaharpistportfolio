@@ -3,8 +3,16 @@
         to right bottom,
         rgba($color-primary-light, 0.8),
         rgba($color-primary-dark, 0.8)),
-    url(https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1550592300/HarpHands.jpg);
+    url(https://res.cloudinary.com/take2tech-ca/image/upload/v1550592300/HarpHands.jpg);
     background-position: center;
     padding: 5rem;
-    height: fit-content;   
+    height: fit-content;
+    
+    &.visible {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 0.8)),
+        url(https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1550592300/HarpHands.jpg);
+    }
 }
