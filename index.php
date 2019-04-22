@@ -47,7 +47,19 @@
         <header class="header">
             <div class="header__topLine">
                 <div class="header__topLine--logo-box">
-                    <img src="https://res.cloudinary.com/take2tech-ca/image/upload/v1551052385/musiclogonobacktancolor1.png" alt="Logo made up of music symbols" class="header__topLine--logo">
+                    <img class="header__topLine--logo" 
+                         alt="Business logo with music symbols"
+                         sizes="(max-width: 816px) 100vw, 816px"
+                         data-srcset="
+                            https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_200/q_auto,f_auto,fl_awebp,fl_lossy/musiclogonobacktancolor1.png 200w,
+                            https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_345/q_auto,f_auto,fl_awebp,fl_lossy/musiclogonobacktancolor1.png 384w,
+                            https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_459/q_auto,f_auto,fl_awebp,fl_lossy/musiclogonobacktancolor1.png 521w,
+                            https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_562/q_auto,f_auto,fl_awebp,fl_lossy/musiclogonobacktancolor1.png 651w,
+                            https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_655/q_auto,f_auto,fl_awebp,fl_lossy/musiclogonobacktancolor1.png 774w,
+                            https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_816/q_auto,f_auto,fl_awebp,fl_lossy/musiclogonobacktancolor1.png 852w"
+                         data-src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_816/q_auto,f_auto,fl_awebp,fl_lossy/musiclogonobacktancolor1.png"
+                         src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_5/q_auto,f_auto,fl_awebp,fl_lossy/musiclogonobacktancolor1.png"
+                    >
                 </div>
                 <div class="navigation">                 
                     <nav class="header__topLine--navigation">
@@ -512,9 +524,15 @@
         <footer class="footer">
             <div class="footer__logo-box">
                 <picture class="footer__logo">
-                    <img alt="Logo-Tiffany Hansen's name in a pretty font." 
-                            src="https://res.cloudinary.com/take2tech-ca/image/upload/v1551052457/logo.png" 
-                            data-src="https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1551052457/logo.png">
+                    <img 
+                         alt="Logo-Tiffany Hansen's name in a pretty font."
+                         sizes="(max-width: 700px) 100vw, 700px"
+                         data-srcset="
+                            https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_200/q_auto,f_auto,fl_awebp,fl_lossy/logo.png 200w,
+                            https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_700/q_auto,f_auto,fl_awebp,fl_lossy/logo.png 700w"
+                         data-src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_816/q_auto,f_auto,fl_awebp,fl_lossy/logo.png"
+                         src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_5/q_auto,f_auto,fl_awebp,fl_lossy/logo.png"
+                    >
                 </picture>               
             </div>
             <div class="row">
@@ -564,14 +582,12 @@
                 }        
                 const loadImage = (image) => {
                     const src = image.dataset.src;
-                    const srcset = image.dataset.srcset;
+                    const srcset = (image.dataset.srcset) ? image.dataset.srcset : "";
 
                     if(src) {
                         fetchImage(src, srcset).then(() => {
-                            // console.log(src)
                             image.srcset = srcset;
                             image.src = src;
-                            console.log(image.alt);
                         });
                     }                   
                 }
@@ -591,13 +607,43 @@
                 const observer = new IntersectionObserver(handleIntersection, options);   
                 images.forEach(img => {
                     observer.observe(img);
-                    console.log("observing", img);
                 });
-            }else{
-                //Not yet implemented, no inter observer fallback
-                console.log("no inter observer fallback");
-            }
+            }else{       
+                console.log("fallback if no intersection observer");
+                // fallback for image tag images
+                //helper functions for image tag intersection handler
+                const fetchImage = (fetchSrc, fetchSrcset) => {
+                    return new Promise((resolve, reject) => {
+                        const image = new Image();
+                        image.src = fetchSrc;
+                        image.srcset = fetchSrcset;
+                        image.onload = resolve;
+                        image.onerror = reject;
+                    })
+                        .catch((err) => {
+                            console.log('Error in fetchImage', err);
+                            console.log(fetchSrc);
+                        })
+                    ;
+                }        
+                const loadImage = (image) => {
+                    const src = image.dataset.src;
+                    const srcset = (image.dataset.srcset) ? image.dataset.srcset : "";
 
+                    if(src) {
+                        
+                        fetchImage(src, srcset).then(() => {
+                            // console.log(src)
+                            image.srcset = srcset;
+                            image.src = src;
+                        });
+                    }                   
+                }
+
+                images.forEach(img => {
+                    loadImage(img);
+                });
+            }
 
             /*************************** */
             // Intersection Observer
