@@ -95,7 +95,7 @@
                         <div class="composition"> 
                             <img alt="The base of a beautiful gold harp."
                                  class="composition__photo composition__photo--p1"
-                                 sizes="(max-width: 1200px) 100vw, 1200px"
+                                 sizes="(min-width: 600px) 35vw, 50vw"
                                  srcset="
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_200/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg 200w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_293/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg 293w,
@@ -117,11 +117,11 @@
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1068/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg 1068w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1105/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg 1105w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1200/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg 1200w"
-                                src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1200/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg 1200w">
+                                src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1200/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg">
                            
                             <img alt="Closeup of hands playing the harp."
                                  class="composition__photo composition__photo--p2"                                
-                                 sizes="(max-width: 1400px) 100vw, 1400px"
+                                 sizes="(min-width: 600px) 35vw 50vw"
                                  srcset="
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_200/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg 200w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_355/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg 355w,
@@ -142,7 +142,7 @@
                                  src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1400/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg">
                             <img alt="Tiffany playing the harp in a long gown."
                                  class="composition__photo composition__photo--p3"
-                                 sizes="(max-width: 1400px) 100vw, 1400px"
+                                 sizes="(min-width: 600px) 35vw, 50vw"
                                  srcset="
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_200/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg 200w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_340/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg 340w,
@@ -164,7 +164,7 @@
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1369/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg 1369w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1391/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg 1391w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1400/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg 1400w"
-                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1400/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg 1400w">
+                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1400/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg">
                         </div>
                     </div>
                 </div>
