@@ -94,9 +94,9 @@
                     <div class="col-1-of-2 section-sublanding__text--photos">
                         <div class="composition"> 
                             <img alt="The base of a beautiful gold harp."
-                                 class="composition__photo composition__photo--p1"
+                                 class="composition__photo composition__photo--p1 imgTest"
                                  sizes="(min-width: 600px) 35vw, 50vw"
-                                 srcset="
+                                 data-srcset="
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_200/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg 200w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_293/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg 293w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_368/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg 368w,
@@ -117,12 +117,13 @@
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1068/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg 1068w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1105/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg 1105w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1200/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg 1200w"
-                                src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1200/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg">
-                           
+                                 data-src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1200/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg"
+                                 src = "https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_5/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg"
+                            > 
                             <img alt="Closeup of hands playing the harp."
-                                 class="composition__photo composition__photo--p2"                                
+                                 class="composition__photo composition__photo--p2 imgTest"                                
                                  sizes="(min-width: 600px) 35vw 50vw"
-                                 srcset="
+                                 data-srcset="
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_200/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg 200w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_355/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg 355w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_480/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg 480w,
@@ -139,11 +140,13 @@
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1317/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg 1317w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1376/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg 1376w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1400/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg 1400w"                                   
-                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1400/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg">
+                                 data-src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1400/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg"
+                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_5/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg"
+                            >
                             <img alt="Tiffany playing the harp in a long gown."
-                                 class="composition__photo composition__photo--p3"
+                                 class="composition__photo composition__photo--p3 imgTest"
                                  sizes="(min-width: 600px) 35vw, 50vw"
-                                 srcset="
+                                 data-srcset="
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_200/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg 200w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_340/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg 340w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_448/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg 448w,
@@ -164,7 +167,10 @@
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1369/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg 1369w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1391/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg 1391w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1400/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg 1400w"
-                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1400/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg">
+                                 data-src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1400/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg"
+                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_5/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg"
+                            >
+
                         </div>
                     </div>
                 </div>
@@ -225,14 +231,15 @@
                                  class="u-width-100" style="margin-top: 0;" 
                                  alt="Harp in window with sunlight pouring in."
                                  sizes="(max-width: 852px) 100vw, 852px"
-                                 srcset="
+                                 data-srcset="
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_200/q_auto,f_auto,fl_awebp,fl_lossy/HarpSunlight.jpg 200w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_384/q_auto,f_auto,fl_awebp,fl_lossy/HarpSunlight.jpg 384w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_521/q_auto,f_auto,fl_awebp,fl_lossy/HarpSunlight.jpg 521w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_651/q_auto,f_auto,fl_awebp,fl_lossy/HarpSunlight.jpg 651w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_774/q_auto,f_auto,fl_awebp,fl_lossy/HarpSunlight.jpg 774w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_852/q_auto,f_auto,fl_awebp,fl_lossy/HarpSunlight.jpg 852w"
-                                    src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_852/q_auto,f_auto,fl_awebp,fl_lossy/HarpSunlight.jpg">
+                                 data-src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_852/q_auto,f_auto,fl_awebp,fl_lossy/HarpSunlight.jpg"
+                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_5/q_auto,f_auto,fl_awebp,fl_lossy/HarpSunlight.jpg">
                         </div>
                         <div class="mySlides fade">
                         <div class="numbertext" style="color: #333">2 / 9</div>
@@ -240,7 +247,7 @@
                                  class="u-width-100" 
                                  style="margin-top:0;" 
                                  alt="Tiffany playing the harp at a wedding beside a lake with a mountain background."
-                                 srcset="
+                                 data-srcset="
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_200/q_auto,f_auto,fl_awebp,fl_lossy/tiffany_weddingBrushOutBag2.jpg 200w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_327/q_auto,f_auto,fl_awebp,fl_lossy/tiffany_weddingBrushOutBag2.jpg 327w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_426/q_auto,f_auto,fl_awebp,fl_lossy/tiffany_weddingBrushOutBag2.jpg 426w,
@@ -251,14 +258,15 @@
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_787/q_auto,f_auto,fl_awebp,fl_lossy/tiffany_weddingBrushOutBag2.jpg 787w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_847/q_auto,f_auto,fl_awebp,fl_lossy/tiffany_weddingBrushOutBag2.jpg 847w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1024/q_auto,f_auto,fl_awebp,fl_lossy/tiffany_weddingBrushOutBag2.jpg 1024w"
-                                src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1024/q_auto,f_auto,fl_awebp,fl_lossy/tiffany_weddingBrushOutBag2.jpg">
+                                 data-src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1024/q_auto,f_auto,fl_awebp,fl_lossy/tiffany_weddingBrushOutBag2.jpg"
+                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_5/q_auto,f_auto,fl_awebp,fl_lossy/tiffany_weddingBrushOutBag2.jpg">
                         </div>
                         <div class="mySlides fade">
                         <div class="numbertext">3 / 9</div>
                             <img class="u-width-100" style="margin-top: -13%;" 
                                  alt="Tiffany playing the harp at an intimate chapel in Calgary."
                                  sizes="(max-width: 720px) 100vw, 720px"
-                                 srcset="
+                                 data-srcset="
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_200/q_auto,f_auto,fl_awebp,fl_lossy/HarpYellow.jpg 200w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_291/q_auto,f_auto,fl_awebp,fl_lossy/HarpYellow.jpg 291w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_361/q_auto,f_auto,fl_awebp,fl_lossy/HarpYellow.jpg 361w,
@@ -267,14 +275,15 @@
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_558/q_auto,f_auto,fl_awebp,fl_lossy/HarpYellow.jpg 558w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_616/q_auto,f_auto,fl_awebp,fl_lossy/HarpYellow.jpg 616w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_720/q_auto,f_auto,fl_awebp,fl_lossy/HarpYellow.jpg 720w"
-                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_720/q_auto,f_auto,fl_awebp,fl_lossy/HarpYellow.jpg">
+                                 data-src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_720/q_auto,f_auto,fl_awebp,fl_lossy/HarpYellow.jpg"
+                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_5/q_auto,f_auto,fl_awebp,fl_lossy/HarpYellow.jpg">
                         </div>
                         <div class="mySlides fade">
                         <div class="numbertext">4 / 9</div>
                             <img class="u-width-100" 
                                  style="margin-top: -10%;" 
                                  alt="Tiffany playing the harp at Lake Louise."
-                                 srcset="
+                                 data-srcset="
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_200/q_auto,f_auto,fl_awebp,fl_lossy/TiffAtLakeLouise.jpg 200w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_366/q_auto,f_auto,fl_awebp,fl_lossy/TiffAtLakeLouise.jpg 366w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_491/q_auto,f_auto,fl_awebp,fl_lossy/TiffAtLakeLouise.jpg 491w,
@@ -282,14 +291,16 @@
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_695/q_auto,f_auto,fl_awebp,fl_lossy/TiffAtLakeLouise.jpg 695w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_892/q_auto,f_auto,fl_awebp,fl_lossy/TiffAtLakeLouise.jpg 892w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_960/q_auto,f_auto,fl_awebp,fl_lossy/TiffAtLakeLouise.jpg 960w"
-                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_960/q_auto,f_auto,fl_awebp,fl_lossy/TiffAtLakeLouise.jpg">
+                                 data-src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_960/q_auto,f_auto,fl_awebp,fl_lossy/TiffAtLakeLouise.jpg"
+                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_5/q_auto,f_auto,fl_awebp,fl_lossy/TiffAtLakeLouise.jpg"
+                            >
                         </div>
                         <div class="mySlides fade">
                         <div class="numbertext">5 / 9</div>
                             <img class="u-width-100" 
                                  alt="Closeup of two hands playing the harp."
                                  sizes="(max-width: 1400px) 100vw, 1400px"
-                                 srcset="
+                                 data-srcset="
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_200/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg 200w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_355/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg 355w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_480/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg 480w,
@@ -306,14 +317,16 @@
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1317/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg 1317w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1376/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg 1376w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1400/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg 1400w"                                   
-                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1400/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg">
+                                 data-src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1400/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg"
+                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_5/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg"
+                            >
                         </div>
                         <div class="mySlides fade">
                         <div class="numbertext">6 / 9</div>
                             <img class="u-width-100" 
                                  alt="Closeup of the base of a beautiful golden harp."
                                  sizes="(max-width: 1200px) 100vw, 1200px"
-                                 srcset="
+                                 data-srcset="
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_200/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg 200w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_293/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg 293w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_368/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg 368w,
@@ -334,14 +347,16 @@
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1068/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg 1068w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1105/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg 1105w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1200/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg 1200w"
-                                src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1200/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg">
+                                 data-src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1200/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg"
+                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_5/q_auto,f_auto,fl_awebp,fl_lossy/HarpBase.jpg"
+                            >
                         </div>
                         <div class="mySlides fade">
                         <div class="numbertext">7 / 9</div>
                             <img class="u-width-100" style="margin-top: -27%;" 
                                  alt="Tiffany playing the harp in a long gown."
                                  sizes="(max-width: 1400px) 100vw, 1400px"
-                                 srcset="
+                                 data-srcset="
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_200/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg 200w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_340/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg 340w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_448/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg 448w,
@@ -362,38 +377,40 @@
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1369/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg 1369w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1391/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg 1391w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1400/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg 1400w"
-                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1400/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg">
+                                 data-src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1400/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg"
+                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_5/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg"
+                            >
                         </div>
                         <div class="mySlides fade">
                         <div class="numbertext">8 / 9</div>
-                            <img src="https://res.cloudinary.com/take2tech-ca/image/upload/v1551051563/HarpAtLakeLouise.jpg" 
-                                 data-src="https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1551051563/HarpAtLakeLouise.jpg" 
-                                 class="u-width-100" style="margin-top: -13%;" 
+                            <img class="u-width-100" style="margin-top: -13%;" 
                                  alt="Tiffany's harp with a Lake Louise background."
                                  sizes="(max-width: 960px) 100vw, 960px"
-                                 srcset="
+                                 data-srcset="
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_200/q_auto,f_auto,fl_awebp,fl_lossy/HarpAtLakeLouise.jpg 200w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_372/q_auto,f_auto,fl_awebp,fl_lossy/HarpAtLakeLouise.jpg 372w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_506/q_auto,f_auto,fl_awebp,fl_lossy/HarpAtLakeLouise.jpg 506w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_621/q_auto,f_auto,fl_awebp,fl_lossy/HarpAtLakeLouise.jpg 621w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_735/q_auto,f_auto,fl_awebp,fl_lossy/HarpAtLakeLouise.jpg 735w,
                                     https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_960/q_auto,f_auto,fl_awebp,fl_lossy/HarpAtLakeLouise.jpg 960w"
-                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_960/q_auto,f_auto,fl_awebp,fl_lossy/HarpAtLakeLouise.jpg">
+                                 data-src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_960/q_auto,f_auto,fl_awebp,fl_lossy/HarpAtLakeLouise.jpg"
+                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_5/q_auto,f_auto,fl_awebp,fl_lossy/HarpAtLakeLouise.jpg"
+                            >
                         </div>           
                         <div class="mySlides fade">
                         <div class="numbertext">9 / 9</div>
-                            <img src="https://res.cloudinary.com/take2tech-ca/image/upload/v1551052451/TiffSmiling.jpg" 
-                                    data-src="https://res.cloudinary.com/take2tech-ca/image/upload/q_auto,f_webp,fl_awebp,fl_lossy/v1551052451/TiffSmiling.jpg" 
-                                     class="u-width-100" style="margin-top:-60%;" 
-                                     alt="Closeup of Tiffany at the harp with a big smile for the camera."
-                                     sizes="(max-width: 574px) 100vw, 574px"
-                                     srcset="
-                                        https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_200/q_auto,f_auto,fl_awebp,fl_lossy/TiffSmiling.jpg 200w,
-                                        https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_304/q_auto,f_auto,fl_awebp,fl_lossy/TiffSmiling.jpg 304w,
-                                        https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_387/q_auto,f_auto,fl_awebp,fl_lossy/TiffSmiling.jpg 387w,
-                                        https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_460/q_auto,f_auto,fl_awebp,fl_lossy/TiffSmiling.jpg 460w,
-                                        https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_574/q_auto,f_auto,fl_awebp,fl_lossy/TiffSmiling.jpg 574w"
-                                     src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_574/q_auto,f_auto,fl_awebp,fl_lossy/TiffSmiling.jpg">                                    
+                            <img class="u-width-100" style="margin-top:-60%;" 
+                                 alt="Closeup of Tiffany at the harp with a big smile for the camera."
+                                 sizes="(max-width: 574px) 100vw, 574px"
+                                 data-srcset="
+                                    https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_200/q_auto,f_auto,fl_awebp,fl_lossy/TiffSmiling.jpg 200w,
+                                    https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_304/q_auto,f_auto,fl_awebp,fl_lossy/TiffSmiling.jpg 304w,
+                                    https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_387/q_auto,f_auto,fl_awebp,fl_lossy/TiffSmiling.jpg 387w,
+                                    https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_460/q_auto,f_auto,fl_awebp,fl_lossy/TiffSmiling.jpg 460w,
+                                    https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_574/q_auto,f_auto,fl_awebp,fl_lossy/TiffSmiling.jpg 574w"
+                                 data-src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_574/q_auto,f_auto,fl_awebp,fl_lossy/TiffSmiling.jpg"
+                                 src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_5/q_auto,f_auto,fl_awebp,fl_lossy/TiffSmiling.jpg"
+                            >                                    
                         </div> 
                         <!-- Next and previous buttons -->
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -519,11 +536,76 @@
             
         </footer>
         <script> 
-            // // Intersection Observer
+            //Intersection Observer take 2 with srcsets
+            const images = document.querySelectorAll('img');
+            
+            if ('IntersectionObserver' in window) {  //Most of code courtesy of Chris Nwamba
+                const options = {
+                    // If the image gets within 50px in the Y axis, start the download.
+                    root: null, // Page as root
+                    rootMargin: '0px',
+                    threshold: .1
+                };
+                
+                //helper functions for image tag intersection handler
+                const fetchImage = (fetchSrc, fetchSrcset) => {
+                    return new Promise((resolve, reject) => {
+                        const image = new Image();
+                        image.src = fetchSrc;
+                        image.srcset = fetchSrcset;
+                        image.onload = resolve;
+                        image.onerror = reject;
+                    })
+                        .catch((err) => {
+                            console.log('Error in fetchImage', err);
+                            console.log(url);
+                        })
+                    ;
+                }        
+                const loadImage = (image) => {
+                    const src = image.dataset.src;
+                    const srcset = image.dataset.srcset;
+
+                    if(src) {
+                        fetchImage(src, srcset).then(() => {
+                            // console.log(src)
+                            image.srcset = srcset;
+                            image.src = src;
+                            console.log(image.alt);
+                        });
+                    }                   
+                }
+                const handleIntersection = (entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.intersectionRatio > 0) {
+                            //console.log(entry.target, "observed");
+                            //setTimeout(() => {
+                                loadImage(entry.target);    
+                            //}, 800);                          
+                            observer.unobserve(entry.target);
+                        }
+                        
+                    });
+                }
+                // The observer for imgTest class images
+                const observer = new IntersectionObserver(handleIntersection, options);   
+                images.forEach(img => {
+                    observer.observe(img);
+                    console.log("observing", img);
+                });
+            }else{
+                //Not yet implemented, no inter observer fallback
+                console.log("no inter observer fallback");
+            }
+
+
+            /*************************** */
+            // Intersection Observer
             // const images = document.querySelectorAll('img');
+            
             // const cssImages = document.querySelectorAll('.cssImage');
 
-            // if (!'IntersectionObserver' in window) {  //Most of code courtesy of Chris Nwamba
+            // if ('IntersectionObserver' in window) {  //Most of code courtesy of Chris Nwamba
             //         const options = {
             //             // If the image gets within 50px in the Y axis, start the download.
             //             root: null, // Page as root
