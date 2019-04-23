@@ -19,18 +19,27 @@
         to right bottom,
         rgba($color-primary-light, 0.8),
         rgba($color-primary-dark, 0.8)),
-        url(https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_999/q_auto,f_auto,fl_awebp,fl_lossy/nat-4.jpg); //was c_scale,w_932
+        url(https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_932/q_auto,f_auto,fl_awebp,fl_lossy/nat-4.jpg); //was c_scale,w_932
+    
+    @include respond(tab-port) {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 0.8)),
+            url(https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_500/q_auto,f_auto,fl_awebp,fl_lossy/nat-4.jpg); //was c_scale,w_932
+    }
+        
     background-size: cover;
     transform: skewY(7deg);
     margin-top: -10rem;
 
-    &.visible {
-        background-image: linear-gradient(
-        to right bottom,
-        rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8)),
-        url(https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_999/q_auto,f_auto,fl_awebp,fl_lossy/nat-4.jpg); //was c_scale,w_932
-    }
+    // &.visible {
+    //     background-image: linear-gradient(
+    //     to right bottom,
+    //     rgba($color-primary-light, 0.8),
+    //     rgba($color-primary-dark, 0.8)),
+    //     url(https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_999/q_auto,f_auto,fl_awebp,fl_lossy/nat-4.jpg); //was c_scale,w_932
+    // }
     & > * {
         transform: skewY(-7deg);
     }
@@ -83,7 +92,6 @@
     background-size: 100%;
     border-radius: 3px;
     background-position: center right;
-
     box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
 
     // @include respond(tab-land) {
@@ -106,18 +114,18 @@
     // }
 
     &.visible {
-        background-image: linear-gradient(105deg, 
-                                    rgba($color-white, .9) 0%,
-                                    rgba($color-white, .9) 50%,
-                                    transparent 50%) ,
-                            url(https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_999/q_auto,f_auto,fl_awebp,fl_lossy/tiffany_mountainCropRight.jpg);  //was c_scale,w_932   
-    
+        background-image:   linear-gradient(105deg, 
+                                rgba($color-white, .9) 0%,
+                                rgba($color-white, .9) 50%,
+                                transparent 50%) ,
+                            url(https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_932/q_auto,f_auto,fl_awebp,fl_lossy/tiffany_mountainCropRight.jpg);  
+            
         @include respond(tab-land) {
             background-image: linear-gradient(105deg, 
             rgba($color-white, .9) 0%,
             rgba($color-white, .9) 65%,
             transparent 65%),
-            url(https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_999/q_auto,f_auto,fl_awebp,fl_lossy/tiffany_mountainCropVeryRight.jpg);   //was c_scale,w_932
+            url(https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_932/q_auto,f_auto,fl_awebp,fl_lossy/tiffany_mountainCropVeryRight.jpg);   //was c_scale,w_932
             background-size: cover;
         }
     
@@ -126,13 +134,10 @@
             rgba($color-white, .9) 0%,
             rgba($color-white, .9) 55%,
             transparent 55%),
-            url(https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_999/q_auto,f_auto,fl_awebp,fl_lossy/tiffany_mountainCropVeryRight.jpg);   //was c_scale,w_932
+            url(https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_932/q_auto,f_auto,fl_awebp,fl_lossy/tiffany_mountainCropVeryRight.jpg);   //was c_scale,w_932
             background-size: cover;          
         }
-    }
-
-    
-   
+    }  
     @include respond(phone) {
         background-image: none;     
     }

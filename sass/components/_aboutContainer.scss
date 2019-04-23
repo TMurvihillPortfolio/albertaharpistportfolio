@@ -3,16 +3,25 @@
         to right bottom,
         rgba($color-primary-light, 0.8),
         rgba($color-primary-dark, 0.8)),
-    url(https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_999/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg); //was c_scale,w_932
-    background-position: center;
-    padding: 5rem;
-    height: fit-content;
+        url(https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_932/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg); //was c_scale,w_932
     
-    &.visible {
+    @include respond(tab-port) {
         background-image: linear-gradient(
             to right bottom,
             rgba($color-primary-light, 0.8),
             rgba($color-primary-dark, 0.8)),
-        url(https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_999/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg); //was c_scale,w_932
+            url(https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_500/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg); //was c_scale,w_932
     }
+        
+    background-position: center;
+    padding: 5rem;
+    height: fit-content;
+    
+    // &.visible {
+    //     background-image: linear-gradient(
+    //         to right bottom,
+    //         rgba($color-primary-light, 0.8),
+    //         rgba($color-primary-dark, 0.8)),
+    //     url(https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_999/q_auto,f_auto,fl_awebp,fl_lossy/HarpHands.jpg); //was c_scale,w_932
+    // }
 }

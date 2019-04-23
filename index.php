@@ -553,7 +553,7 @@
             </div>
             
         </footer>
-        <script> 
+        <script>
             //Intersection Observer take 2 with srcsets
             const images = document.querySelectorAll('img');
             
