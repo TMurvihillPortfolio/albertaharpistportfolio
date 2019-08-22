@@ -2,7 +2,6 @@
     position: relative;
     width: 300px;  
     height: 400px;    
-    //background-color: tomato;    
     margin: auto;   
 
     &__photo {
@@ -89,5 +88,4 @@
     &:hover &__photo:not(:hover) {
         transform: scale(.95);
     }
-    //composition:hover composition__photo:not(:hover) {
 }

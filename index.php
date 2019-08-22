@@ -19,8 +19,6 @@
         <script>
             grecaptcha.ready(function() {
                 grecaptcha.execute('6LdrkJIUAAAAAItgLonuFmpJSDOnofRZqEaamBni', {action: 'homepage'}).then(function(token) {
-                    // pass the token to the backend script for verification
-
                     // add token value to form for PHP verification
                     document.getElementById('g-recaptcha-response').value = token;
                 });
@@ -81,6 +79,7 @@
         </header>
 
         <main>
+            <!-- Intro section below landing image -->
             <section class="section-subLanding">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
@@ -182,12 +181,11 @@
                                  data-src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_1400/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg"
                                  src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,w_5/q_auto,f_auto,fl_awebp,fl_lossy/tiffany.jpg"
                             >
-
                         </div>
                     </div>
                 </div>
             </section>
-
+            <!-- Description of services (4 horizontal boxes) -->
             <section class="section-features cssImage">               
                 <div class="row">
                     <div class="col-1-of-4">
@@ -227,7 +225,7 @@
                     </div>
                 </div>
             </section>
-
+            <!-- More details about weddings -->
             <section class="section-weddings">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary" id="weddings">
@@ -235,8 +233,8 @@
                     </h2>
                 </div>
                 <div class="weddingsContainer">
+                    <!-- Slideshow -->
                     <div class="slideshow-container">
-                        <!-- Full-width images with number and caption text -->
                         <div class="mySlides fade">
                         <div class="numbertext">1 / 9</div>
                             <img 
@@ -428,7 +426,8 @@
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                         <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     </div>
-                    <br>                 
+                    <br>
+                    <!-- Show slideshow progress -->                 
                     <div class = "dotContainer">
                         <span class="dot" onclick="currentSlide(1)"></span> 
                         <span class="dot" onclick="currentSlide(2)"></span> 
@@ -450,7 +449,7 @@
                     </div>
                 </div>               
             </section>
-
+            <!-- About Tiffany -->
             <section class="section-about" id="about">               
                 <div class="aboutContainer cssImage">
                     <div class="row">
@@ -470,7 +469,7 @@
                     </div>
                 </div> 
             </section>
-        
+        <!-- Contact Tiffany -->
         <div class="u-center-text u-margin-bottom-big">
             <h2 class="heading-secondary">
                 Contact
@@ -520,7 +519,7 @@
             </div>
         </section>
         </main>
-
+        <!-- Footer -->
         <footer class="footer">
             <div class="footer__logo-box">
                 <picture class="footer__logo">
@@ -554,10 +553,10 @@
             
         </footer>
         <script>
-            //Intersection Observer take 2 with srcsets
+            //Intersection Observer with srcsets
             const images = document.querySelectorAll('img');
             
-            if ('IntersectionObserver' in window) {  //Most of code courtesy of Chris Nwamba
+            if ('IntersectionObserver' in window) {  //Code adapted from code by Chris Nwamba
                 const options = {
                     // If the image gets within 50px in the Y axis, start the download.
                     root: null, // Page as root
@@ -593,11 +592,8 @@
                 }
                 const handleIntersection = (entries, observer) => {
                     entries.forEach(entry => {
-                        if (entry.intersectionRatio > 0) {
-                            //console.log(entry.target, "observed");
-                            //setTimeout(() => {
-                                loadImage(entry.target);    
-                            //}, 800);                          
+                        if (entry.intersectionRatio > 0) {               
+                                loadImage(entry.target);        
                             observer.unobserve(entry.target);
                         }
                         
@@ -630,126 +626,17 @@
                     const src = image.dataset.src;
                     const srcset = (image.dataset.srcset) ? image.dataset.srcset : "";
 
-                    if(src) {
-                        
+                    if(src) {               
                         fetchImage(src, srcset).then(() => {
-                            // console.log(src)
                             image.srcset = srcset;
                             image.src = src;
                         });
                     }                   
                 }
-
                 images.forEach(img => {
                     loadImage(img);
                 });
             }
-
-            /*************************** */
-            // Intersection Observer
-            // const images = document.querySelectorAll('img');
-            
-            // const cssImages = document.querySelectorAll('.cssImage');
-
-            // if ('IntersectionObserver' in window) {  //Most of code courtesy of Chris Nwamba
-            //         const options = {
-            //             // If the image gets within 50px in the Y axis, start the download.
-            //             root: null, // Page as root
-            //             rootMargin: '0px',
-            //             threshold: 0.1
-            //         };
-                
-            //         //handler functions for image tag images
-            //         const fetchImage = (url) => {
-            //             return new Promise((resolve, reject) => {
-            //                 const image = new Image();
-            //                 image.src = url;
-            //                 image.onload = resolve;
-            //                 image.onerror = reject;
-            //             })
-            //                 .catch((err) => {
-            //                     console.log('Error in fetchImage', err);
-            //                     console.log(url);
-            //                 })
-            //             ;
-            //         }
-                
-            //         const loadImage = (image) => {
-            //             const src = image.dataset.src;
-
-            //             if(src) {
-            //                 fetchImage(src).then(() => {
-            //                     // console.log(src)
-            //                     image.src = src;
-            //                 });
-            //             }                   
-            //         }
-                
-            //         const handleIntersection = (entries, observer) => {
-            //             entries.forEach(entry => {
-            //                 if (entry.intersectionRatio > 0) {
-            //                     observer.unobserve(entry.target)
-            //                     //setTimeout(() => {
-            //                         loadImage(entry.target); 
-            //                     //}, 2000);                                               
-            //                 }
-            //             });
-            //         }
-                
-            //         // The observer for image tag images
-            //         const observer = new IntersectionObserver(handleIntersection, options);   
-            //         images.forEach(img => {
-            //             observer.observe(img);
-            //         });
-                    
-            //         //Handler and Observer for CSS background images
-            //         const handleCSSImageIntersection = (entries, observer) => {
-            //             entries.forEach(entry => {
-            //                 if (entry.intersectionRatio > 0) {
-            //                     observer.unobserve(entry.target);
-            //                     //console.log('css observed', entry.target);
-            //                     //setTimeout(() => {
-            //                         entry.target.classList.add('visible');
-            //                     //}, 2000);
-                                                
-            //                 }
-            //             });
-            //         }
-
-            //         const cssImageObserver = new IntersectionObserver(handleCSSImageIntersection, options);
-            //         cssImages.forEach(cssImage => {
-            //             cssImageObserver.observe(cssImage);                     
-            //         });
-
-            // } else {
-            //     console.log('imin');
-            //     //fallback for image tag images
-            //     // const fetchImage = (url) => {
-            //     //     return new Promise((resolve, reject) => {
-            //     //         const image = new Image();
-            //     //         image.src = url;
-            //     //         image.onload = resolve;
-            //     //         image.onerror = reject;
-            //     //     });
-            //     // }
-
-            //     // const loadImage = (image) => {
-            //     //     const src = image.dataset.src;
-            //     //     fetchImage(src).then(() => {
-            //     //         // console.log(src)
-            //     //         image.src = src;
-            //     //     });
-            //     // }
-
-            //     // images.forEach(img => {
-            //     //     loadImage(img);
-            //     // });
-
-            //     // //fallback for css background images
-            //     // cssImages.forEach(cssImage => {
-            //     //     cssImage.classList.add('visible');                     
-            //     // });
-            // }
         </script>
         <script src="js/script.js?version=1.003"></script>
     </body>

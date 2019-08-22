@@ -1,5 +1,9 @@
 "use strict";
 
+/*******************
+ * Slide functionality 
+ *    --adapted from w3schools
+ *******************/
 var slideIndex = 1;
 
 // Next/previous controls
@@ -15,7 +19,6 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var tester = document.getElementById('tester');
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1} 
   if (n < 1) {slideIndex = slides.length}
@@ -28,10 +31,12 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
-
 document.addEventListener("DOMContentLoaded", function(event) { 
    showSlides(slideIndex);
 });
+/**********************
+ * Show Recaptcha Badge when user scrolls to contact form
+ **********************/
 document.addEventListener("scroll", event => { 
     const captchaBadge = document.querySelector('.grecaptcha-badge');
     if (captchaBadge) {

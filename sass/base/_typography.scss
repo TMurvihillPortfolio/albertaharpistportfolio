@@ -3,11 +3,6 @@
     font-display: swap;
     src: url('fonts/savoye.ttf');
 }
-// @font-face {
-//     font-family: Lato;
-//     font-display: swap;
-//     src: url('fonts/savoye.ttf');
-// }
 @font-face {
     font-family: tangerine;
     font-display: swap;
@@ -24,7 +19,6 @@ a {
 body {
     font-family: "Lato", sans-serif;   
     font-weight: 400;
-    /*font-size: 16px;*/
     line-height: 1.7;
     color: $color-grey-dark;
 }
@@ -34,8 +28,6 @@ body {
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 6rem;
-
-    //from h1 class because h1 tag removed from "dreams" quote for the sake of SEO. 
     display: block;
     font-size: 2em;
     margin-block-start: 0.67em;
@@ -58,10 +50,6 @@ body {
             letter-spacing: 1rem;
             font-family: 5rem;
         }
-        /*
-        animation-delay: 3s;
-        animation-iteration-count: 3;
-        */
     }
     
     &--sub {
